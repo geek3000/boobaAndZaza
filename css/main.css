@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+
+:root {
+  /*Colors */
+  --primary-color: #ffa45c;
+  --secondary-color: #052b5d;
+  --accent-color: #fdbc5a;
+  --error-color: #f55f44;
+
+  /*Font sizes*/
+  --regular-size: 0.9em;
+  --small-size: 0.7em;
+}
+
+html {
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+p {
+  font-size: var(--regular-size);
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: var(--secondary-color);
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+.primary-title {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  margin: 20px;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+header {
+  background: url("/images/banner.jpg") no-repeat center;
+  background-size: 100% 100%;
+  height: 200px;
+  margin-bottom: 1%;
+}
+
+header .container {
+  margin: 0 10px;
+}
+
+header .nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1%;
+}
+
+.nav-bar img {
+  width: 20px;
+}
+
+.card {
+  background: white;
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: var(--regular-size);
+  transition: 0.3s;
+}
+
+.logo {
+  font-size: 0.8em;
+  font-weight: bolder;
+  color: var(--secondary-color);
+  line-height: normal;
+}
+
+.exit-btn img {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.exit-btn {
+  margin-bottom: 1em;
+  margin-top: -2.5em;
+  text-align: right;
+  padding: 1em 1em;
+}
+
+nav ul {
+  position: fixed;
+  width: 60%;
+  top: 0;
+  right: 0;
+  text-align: left;
+  color: var(--secondary-color);
+  background: white;
+  height: 40%;
+  z-index: 7;
+  padding-top: 2em;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li a {
+  display: block;
+  width: 100%;
+  padding: 1em 2em;
+}
+
+nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+nav ul li:last-child a {
+  font-weight: bolder;
+  background-color: var(--error-color);
+  color: white;
+  transition: 0.3s;
+}
+
+nav ul li:last-child a:hover {
+  font-weight: bolder;
+  background-color: var(--error-color);
+  box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.specifications {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+.specifications i {
+  color: var(--primary-color);
+}
+
+.specifications span {
+  font-weight: bold;
+}
+
+.summary-text,
+.why-edutainment {
+  text-align: justify;
+}
+
+.summary-text span,
+.why-edutainment span {
+  font-weight: bold;
+}
+
+.summary a {
+  font-weight: bolder;
+  color: var(--primary-color);
+}
+
+.donate {
+  display: flex;
+  flex-direction: column;
+}
+
+.donate img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.donate-explanation {
+  background-color: var(--error-color);
+  color: white;
+  padding: 5%;
+  text-align: center;
+}
+
+.amounts {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.amount, .donate-button {
+  background-color: var(--accent-color);
+  padding: 2%;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.donate-button {
+  margin-top: 10px;
+  background-color: var(--secondary-color);
+}
