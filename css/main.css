@@ -27,8 +27,9 @@ body {
   color: var(--secondary-color);
 }
 
-h1 {
+h2 {
   font-weight: bolder;
+  margin: 0;
 }
 
 .primary-title {
@@ -49,7 +50,7 @@ ul {
 
 .container {
   text-align: center;
-  margin: 20px;
+  margin: 0 5%;
 }
 
 .hide-mobile {
@@ -60,7 +61,14 @@ header {
   background: url("/images/banner.jpg") no-repeat center;
   background-size: 100% 100%;
   height: 200px;
+}
+
+.spacer {
   margin-bottom: 50px;
+}
+
+.small-spacer {
+  margin-bottom: 20px;
 }
 
 header .container {
@@ -148,7 +156,6 @@ nav ul li:last-child a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-bottom: 50px;
 }
 
 .specifications i {
@@ -173,11 +180,6 @@ nav ul li:last-child a:hover {
   font-weight: bolder;
   color: var(--primary-color);
 }
-
-.themes-box {
-  margin-bottom: 50px;
-}
-
 .theme {
   margin: 10px;
 }
@@ -186,41 +188,39 @@ nav ul li:last-child a:hover {
   border-radius: 5px;
 }
 
-
 .donate {
   display: flex;
   flex-direction: column;
 }
 
-.donate img {
-  max-height: 100%;
-  max-width: 100%;
+.donate-image img {
+  width: 100%;
+  height: 100%;
 }
 
 .donate-explanation {
   background-color: var(--error-color);
   color: white;
-  padding: 5%;
   text-align: center;
+  padding: 0 1em 1em 1em;
 }
 
 .amounts {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .amount,
 .donate-button {
   background-color: var(--accent-color);
-  padding: 2%;
   cursor: pointer;
   border-radius: 5px;
   font-weight: bold;
+  padding: 1%;
 }
 
 .donate-button {
-  margin-top: 10px;
   background-color: var(--secondary-color);
 }
 
@@ -249,13 +249,10 @@ nav ul li:last-child a:hover {
   width: 100px;
 }
 
-
-
 /*carousel*/
 .owl-carousel .owl-stage {
   padding-bottom: 2em;
 }
-
 
 .owl-dots {
   width: fit-content;
@@ -266,8 +263,8 @@ nav ul li:last-child a:hover {
 }
 
 .owl-dot span {
-  height: .5em;
-  width: .5em;
+  height: 0.5em;
+  width: 0.5em;
   margin: 0 0.5em;
   border-radius: 100%;
   border: 1px solid var(--primary-color);
@@ -280,4 +277,51 @@ nav ul li:last-child a:hover {
 
 .owl-dot.active span {
   background-color: var(--primary-color);
+}
+
+@media only screen and (min-width: 500px) {
+  header {
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .container {
+    margin: 0 10%;
+  }
+  header {
+    height: 300px;
+  }
+
+  .donate {
+    flex-direction: row;
+  }
+  .donate-image {
+    width: 100%;
+  }
+  .donate-explanation {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  h2 {
+    font-size: 2em;
+  }
+
+  header {
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  header {
+    height: 600px;
+  }
 }
