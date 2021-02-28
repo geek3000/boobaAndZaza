@@ -85,6 +85,18 @@ header .nav-bar {
   width: 20px;
 }
 
+nav a .menu {
+  color: white;
+  background-color:var(--error-color);
+  box-shadow: 2px 5px 20px rgba(10, 1, 1, .5);
+  font-size: 1em;
+  padding: .4em;  
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+
 .card {
   background: white;
   box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.05);
@@ -121,7 +133,7 @@ nav ul {
   text-align: left;
   color: var(--secondary-color);
   background: white;
-  height: 40%;
+  height: 20em;
   z-index: 7;
   padding-top: 2em;
   border-bottom-right-radius: 5px;
@@ -143,7 +155,7 @@ nav ul li:last-child a {
   font-weight: bolder;
   background-color: var(--error-color);
   color: white;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 nav ul li:last-child a:hover {
@@ -155,7 +167,7 @@ nav ul li:last-child a:hover {
 .specifications {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .specifications i {
@@ -217,7 +229,7 @@ nav ul li:last-child a:hover {
   cursor: pointer;
   border-radius: 5px;
   font-weight: bold;
-  padding: 1%;
+  padding: 5px;
 }
 
 .donate-button {
@@ -239,6 +251,11 @@ nav ul li:last-child a:hover {
 .footer-menu li a {
   text-decoration: none;
   color: inherit;
+}
+
+.footer-menu li a:hover {
+  color: var(--error-color);
+  font-weight: bold;
 }
 
 .footer-menu li:nth-child(3) a {
@@ -286,11 +303,26 @@ nav ul li:last-child a:hover {
 }
 
 @media only screen and (min-width: 650px) {
+  h2 {
+    font-size: 2em;
+  }
   .container {
     margin: 0 10%;
   }
   header {
     height: 300px;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  nav ul {
+    width: 50%;
+  }
+
+  .specifications {
+    justify-content: space-evenly;
   }
 
   .donate {
@@ -305,10 +337,6 @@ nav ul li:last-child a:hover {
 }
 
 @media only screen and (min-width: 750px) {
-  h2 {
-    font-size: 2em;
-  }
-
   header {
     height: 400px;
   }
@@ -318,10 +346,98 @@ nav ul li:last-child a:hover {
   header {
     height: 500px;
   }
+
+  .show-desktop {
+    display: inline;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
+  nav ul {
+    position: relative;
+    background: none;
+    padding: 0;
+    box-shadow: none;
+    margin-left: 100px;
+  }
+
+  nav ul li {
+    float: left;
+  }
+
+  nav ul li a {
+    padding: 0.25em 2em;
+  }
+
+  nav ul li a:hover {
+    font-weight: bold;
+    color: inherit;
+  }
+
+  nav ul li:last-child a {
+    background: var(--error-color);
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    width: 75%;
+  }
+
+  .donate-explanation {
+    text-align: justify;
+    padding: 2em 2em; 
+  }
+
+  .donate-explanation h3 {
+    font-size: 1.5em;
+  }
+
+  .donate-explanation p {
+    font-size: 1.3em;
+  }
+
+  .amount,
+  .donate-button {
+    padding: 8px;
+  }
+  .donate-button {
+    float: right;
+  }
+
+  .footer-logos {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .footer-logos img {
+    width: 100px;
+  }
+
+  .footer-menu {
+    justify-content: flex-end;
+  }
+
+  .footer-menu a{
+    font-size:var(--small-size);
+  }
 }
 
 @media only screen and (min-width: 1350px) {
   header {
     height: 600px;
+  }
+
+  .donate-explanation {
+    text-align: justify;
+    padding: 2em 10em; 
+  }
+
+  .donate-explanation h3 {
+    font-size: 1.8em;
+  }
+
+  .donate-explanation p {
+    font-size: 1.5em;
   }
 }
