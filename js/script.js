@@ -7,7 +7,3 @@ document.getElementById("menu").addEventListener('click', () => {
 document.getElementById("exit").addEventListener('click', () => {
     nav.classList.toggle("hide-mobile");
 });
-
-nav.addEventListener('click', () => {
-    nav.classList.toggle("hide-mobile");
-});

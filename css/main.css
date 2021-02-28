@@ -88,7 +88,7 @@ header .nav-bar {
 nav a .menu {
   color: white;
   background-color:var(--error-color);
-  box-shadow: 2px 5px 20px rgba(10, 1, 1, .5);
+  box-shadow: 2px 5px 20px rgba(10, 1, 1, 0.3);
   font-size: 1em;
   padding: .4em;  
   height: 20px;
