@@ -381,19 +381,7 @@ nav ul li:last-child a:hover {
   }
 
   .provision {
-    /* height: 90vh; */
-  }
-}
-
-@media only screen and (min-width: 800px) {
-  .provision {
-    /* height: 65vh; */
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  .provision {
-    /*  height: 80vh;  */
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.05);
   }
 }
 
