@@ -231,12 +231,12 @@ nav ul li:last-child a:hover {
 }
 
 .provision-image {
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 80px;
 }
 
 .skills .provision-image {
-  width: 250px;
+  width: 150px;
 }
 
 .donate {
