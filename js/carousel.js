@@ -10,14 +10,15 @@ $(document).ready(function(){
           0: {
             items: 1,
           },
-          500: {
+          750: {
             items: 2,
           },
-          1000: {
+          1350: {
+            autoplay: false,
+            loop: false,
             items: 3 || 4,
+            margin:20
           },
         },
       });
   });
-
-

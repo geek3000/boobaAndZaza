@@ -87,10 +87,10 @@ header .nav-bar {
 
 nav a .menu {
   color: white;
-  background-color:var(--error-color);
+  background-color: var(--error-color);
   box-shadow: 2px 5px 20px rgba(10, 1, 1, 0.3);
   font-size: 1em;
-  padding: .4em;  
+  padding: 0.4em;
   height: 20px;
   width: 20px;
   text-align: center;
@@ -198,6 +198,45 @@ nav ul li:last-child a:hover {
 
 .theme img {
   border-radius: 5px;
+}
+
+.provision {
+  text-align: justify;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.02);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+
+.provision h3 {
+  text-align: center;
+}
+
+.provision-text ul {
+  list-style-type: initial;
+  list-style-position: inside;
+}
+
+.provision-text ul li {
+  font-size: var(--regular-size);
+  margin-left: 35px;
+}
+
+.skills .provision-text p {
+  line-height: 1.8;
+}
+
+.provision-image {
+  width: 150px;
+  height: 150px;
+}
+
+.skills .provision-image {
+  width: 250px;
 }
 
 .donate {
@@ -340,6 +379,22 @@ nav ul li:last-child a:hover {
   header {
     height: 400px;
   }
+
+  .provision {
+    /* height: 90vh; */
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .provision {
+    /* height: 65vh; */
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .provision {
+    /*  height: 80vh;  */
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -384,9 +439,13 @@ nav ul li:last-child a:hover {
     width: 75%;
   }
 
+  .provision {
+    /* height: 100vh; */
+  }
+
   .donate-explanation {
     text-align: justify;
-    padding: 2em 2em; 
+    padding: 2em 2em;
   }
 
   .donate-explanation h3 {
@@ -418,8 +477,8 @@ nav ul li:last-child a:hover {
     justify-content: flex-end;
   }
 
-  .footer-menu a{
-    font-size:var(--small-size);
+  .footer-menu a {
+    font-size: var(--small-size);
   }
 }
 
@@ -430,7 +489,7 @@ nav ul li:last-child a:hover {
 
   .donate-explanation {
     text-align: justify;
-    padding: 2em 10em; 
+    padding: 2em 10em;
   }
 
   .donate-explanation h3 {
