@@ -1,14 +1,9 @@
-//Colors
-$black: #000;
-$white: #fff;
-$gray: rgba(29, 29, 29, 0.7);
-$darkGray: rgba(29, 29, 29, 0.75);
-$blue: #132F82;
-$darkBlue: #052b5d;
+// Colors
+$primary-color: #052b5d;
+$secondary-color: #ffa45c;
+$accent-color: #fdbc5a;
+$error-color: #f55f44;
 
-//Fonts
-$font-sm: 0.9rem;
-$font-primary: 1rem; //16px
-$font-med: 1.15rem;
-$font-lg: 1.375rem; //22px
-$font-xlg: 1.5rem; //24px
+// Font sizes
+$regular-size: 0.9rem;
+$small-size: 0.7rem;
