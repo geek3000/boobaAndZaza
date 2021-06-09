@@ -1,57 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
-html {
-  font-size: 100%;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 15 |     background-color: $black;
+ *    |                       ^^^^^^
+ *    '
+ *   scss/_mobile-menu.scss 15:23  @import
+ *   scss/donation.scss 5:9        root stylesheet */
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
-  text-align: justify;
-  color: #052b5d;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-body.noscroll {
-  overflow: hidden;
-}
-
-a,
-a:visited,
-a:hover {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-img {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 15 \2502      background-color: $black;\a    \2502                        ^^^^^^\a    \2575 \a   scss/_mobile-menu.scss 15:23  @import\a   scss/donation.scss 5:9        root stylesheet";
 }
-
-@media (max-width: 63.9375em) {
-  .hide-for-mobile {
-    display: none;
-  }
-}
-
-@media (min-width: 64em) {
-  .hide-for-desktop {
-    display: none;
-  }
-}
-
-/*# sourceMappingURL=donation.css.map */
