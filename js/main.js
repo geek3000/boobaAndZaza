@@ -12,11 +12,11 @@ function closeMenu() {
 
 hamburgerBtn.addEventListener('click', () => {
   if (hamburgerBtn.classList.contains('open')) {
-    body.classList.remove('noscroll');
+    body.classList.remove('noscrol');
     hamburgerBtn.classList.remove('open');
     closeMenu();
   } else {
-    body.classList.add('noscroll');
+    body.classList.add('noscrol');
     hamburgerBtn.classList.add('open');
     openMenu(100);
   }

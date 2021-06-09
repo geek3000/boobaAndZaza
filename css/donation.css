@@ -23,6 +23,10 @@ body {
 body.noscroll {
   overflow: hidden;
 }
+body main {
+  position: relative;
+  z-index: 2;
+}
 
 a,
 a:visited,
@@ -40,6 +44,12 @@ ul {
 img {
   display: block;
   width: 100%;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  font-style: italic;
 }
 
 .container {
@@ -136,10 +146,10 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
 }
 
 .mobile-menu {
+  position: absolute;
   min-height: 250px;
   width: 0;
-  position: fixed;
-  z-index: 1;
+  z-index: 5;
   top: 0;
   left: 0;
   background-color: #fff;
