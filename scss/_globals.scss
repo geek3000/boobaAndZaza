@@ -51,28 +51,25 @@ img {
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 720px;
 
-  @media (max-width: 991px) {
-    max-width: 720px;
-  }
-
-  @media (max-width: 1200px) {
+  @media (min-width: 992px) {
     max-width: 960px;
   }
 
-  @media (min-width: 1201px) {
+  @media (min-width: 1200px) {
     max-width: 1140px;
   }
 }
 
 .hide-for-mobile {
-  @include breakpoint-down(medium) {
+  @include breakpoint-down(medium2) {
     display: none;
   }
 }
 
 .hide-for-desktop {
-  @include breakpoint-up(large) {
+  @include breakpoint-up(medium2) {
     display: none;
   }
 }

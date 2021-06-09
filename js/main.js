@@ -18,6 +18,6 @@ hamburgerBtn.addEventListener('click', () => {
   } else {
     body.classList.add('noscroll');
     hamburgerBtn.classList.add('open');
-    openMenu(75);
+    openMenu(100);
   }
 });

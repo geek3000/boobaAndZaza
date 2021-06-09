@@ -50,30 +50,26 @@ img {
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 720px;
 }
-@media (max-width: 991px) {
-  .container {
-    max-width: 720px;
-  }
-}
-@media (max-width: 1200px) {
+@media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
 }
-@media (min-width: 1201px) {
+@media (min-width: 1200px) {
   .container {
     max-width: 1140px;
   }
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 61.9375em) {
   .hide-for-mobile {
     display: none;
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 62em) {
   .hide-for-desktop {
     display: none;
   }
@@ -83,7 +79,7 @@ header .nav-wrapper {
   padding-top: 50px;
 }
 
-@media (max-width: 619375em) {
+@media (max-width: 61.9375em) {
   .menu__toggle {
     position: relative;
     display: block;
@@ -113,11 +109,13 @@ header .nav-wrapper {
 .menu__toggle.open span:last-child {
   transform: rotate(-45deg);
 }
+.menu__toggle:hover {
+  opacity: 0.5;
+}
 
 .mobile-menu {
   min-height: 250px;
   width: 0;
-  max-width: 250px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -126,29 +124,36 @@ header .nav-wrapper {
   overflow-x: hidden;
   padding: 70px 0;
   transition: 0.3s ease-in-out;
-  border-bottom-left-radius: 5px;
   box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.1);
 }
 .mobile-menu .menu__list .menu__item {
   padding: 10px 0;
+  cursor: pointer;
 }
 .mobile-menu .menu__list .menu__item.donate {
   background-color: #f55f44;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 5px;
 }
 .mobile-menu .menu__list .menu__item.donate .menu__link {
   color: #fff;
+  text-align: center;
 }
 .mobile-menu .menu__list .menu__item .menu__link {
   width: max-content;
-  padding: 8px 8px 8px 32px;
+  padding: 5px 0;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: 500;
   color: #052b5d;
   display: block;
   transition: 0.3s;
 }
 .mobile-menu .menu__list .menu__item .menu__link:hover {
-  color: #f1f1f1;
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=donation.css.map */
