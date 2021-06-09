@@ -10,13 +10,16 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  color: #052b5d;
+  line-height: 1.875rem;
+  color: #636c98;
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -180,7 +183,7 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
-  color: #052b5d;
+  color: #636c98;
   display: block;
   transition: 0.3s;
 }

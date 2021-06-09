@@ -8,22 +8,100 @@
 section {
   text-align: center;
 
+  @include breakpoint-up(medium) {
+    text-align: left;
+  }
+
   .section-title {
     font-size: 1.75rem;
     line-height: 2.125rem;
+    margin-bottom: 1.3rem;
+    margin-top: 1.7rem;
     font-weight: 700;
     text-transform: uppercase;
     color: $error-color;
   }
 
   p {
-    font-size: 1.125rem;
+    font-size: 1.0625rem;
     line-height: 1.875rem;
-    padding: 16px 0 30px;
-    margin: 0;
+    padding: 0 0 1.875rem;
+    max-width: 90ch;
+
+    @include breakpoint-up(medium2) {
+      //font-size: 1.125rem;
+      //margin: auto;
+    }
   }
 
   &#who-we-are {
     padding-top: 6.75rem;
+
+    .text-summary-wrapper {
+      .text-main {
+        blockquote {
+          margin-bottom: 1.875rem;
+
+          p::before {
+            content: open-quote;
+            font-size: 3rem;
+            color: $error-color;
+          }
+
+          p::after {
+            content: close-quote;
+            font-size: 3rem;
+            color: $error-color;
+          }
+        }
+      }
+
+      @include breakpoint-up(medium2) {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+
+      .text-main {
+        border-top: 4px double $primary-color;
+        padding-top: 2rem;
+        flex: 2;
+      }
+
+      .text-aside {
+        flex: 1;
+
+        .text-aside-img {
+          position: relative;
+          height: 605px;
+
+          img {
+            height: 100%;
+            object-fit: cover;
+            object-position: left;
+          }
+
+          .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 600;
+            background-color: $error-color;
+            text-align: center;
+            padding: 1.5rem;
+            color: #fff;
+          }
+        }
+
+        .text-aside-text {
+          margin-top: 1.5rem;
+          padding: 1.5rem;
+          background-color: #eee;
+        }
+      }
+    }
   }
 }
