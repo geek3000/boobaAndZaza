@@ -77,6 +77,28 @@ img {
 
 header .nav-wrapper {
   padding-top: 50px;
+  display: flex;
+}
+header .nav-wrapper .nav__items {
+  justify-self: flex-end;
+  margin-left: auto;
+}
+header .nav-wrapper .nav__items .link__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav-wrapper .nav__items .link__list .nav__item .nav__link {
+  margin-left: 1rem;
+  padding: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+header .nav-wrapper .nav__items .link__list .nav__item .nav__link.donate {
+  color: #f55f44;
+}
+header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
+  opacity: 0.5;
 }
 
 @media (max-width: 61.9375em) {
