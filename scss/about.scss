@@ -1,0 +1,166 @@
+@import 'variables';
+@import 'mixins';
+@import 'globals';
+@import 'header';
+@import 'mobile-menu';
+@import 'contact-banner';
+@import 'footer';
+
+section {
+  text-align: center;
+
+  @include breakpoint-up(medium) {
+    text-align: left;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+    margin-bottom: 1.3rem;
+    margin-top: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $error-color;
+  }
+
+  p {
+    font-size: 1.0625rem;
+    line-height: 1.875rem;
+    padding: 0 0 1.875rem;
+
+    @include breakpoint-up(medium2) {
+      max-width: 90ch;
+    }
+  }
+
+  &#who-we-are {
+    padding-top: 6.75rem;
+
+    .text-summary-wrapper {
+      @include breakpoint-up(medium2) {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .text-main {
+        border-top: 4px double $primary-light;
+        padding-top: 2rem;
+        flex: 2;
+
+        blockquote {
+          margin-bottom: 1.875rem;
+          color: $primary-light;
+
+          p::before {
+            content: open-quote;
+            font-size: 3rem;
+            color: $error-color;
+          }
+
+          p::after {
+            content: close-quote;
+            font-size: 3rem;
+            color: $error-color;
+          }
+        }
+
+        @include breakpoint-up(medium2) {
+          margin-right: 2rem;
+        }
+      }
+
+      .text-aside {
+        flex: 1;
+
+        .text-aside-img {
+          position: relative;
+          height: 605px;
+
+          img {
+            height: 100%;
+            object-fit: cover;
+            object-position: left;
+          }
+
+          .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 600;
+            background-color: $error-color;
+            text-align: center;
+            padding: 1.5rem;
+            color: #fff;
+          }
+        }
+
+        .text-aside-text {
+          margin-top: 0.8rem;
+          padding: 1.5rem;
+          background-color: #f2f2f2;
+          margin-bottom: 75px;
+        }
+      }
+    }
+  }
+
+  &#current-footprint {
+    .wrapper {
+      .table {
+        max-width: 100%;
+        margin-bottom: 70px;
+
+        table,
+        tr,
+        td {
+          border: 2px solid #eee;
+          border-collapse: collapse;
+          padding: 0.8rem;
+
+          td:nth-child(odd) {
+            background-color: #f2f2f2;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  &#partnerships {
+    .wrapper {
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      overflow-x: scroll;
+      flex-wrap: nowrap;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      .partner-logo {
+        flex: 1 0 250px;
+        margin-right: 1rem;
+        max-width: 50%;
+        height: 150px;
+        border: 1px solid #eee;
+
+        @include breakpoint-up(medium) {
+          max-width: 25%;
+        }
+
+        img {
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

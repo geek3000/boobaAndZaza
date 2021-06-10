@@ -1,0 +1,82 @@
+@import 'variables';
+@import 'mixins';
+@import 'globals';
+@import 'header';
+@import 'mobile-menu';
+@import 'contact-banner';
+@import 'footer';
+
+.top-banner {
+  margin-top: 50px;
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    @include breakpoint-up(medium2) {
+      flex-direction: row;
+    }
+
+    .banner-img {
+      flex: 1;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .banner-text {
+      flex: 1;
+      background-color: $error-color;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 2rem;
+
+      .content {
+        margin: auto;
+        color: #111;
+      }
+
+      h1 {
+        font-size: 42px;
+        word-break: break-all;
+        line-height: 50px;
+        margin-top: 10px;
+        color: #fff;
+
+        .black {
+          color: #111;
+        }
+      }
+
+      .covid {
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 100;
+      }
+
+      .help {
+        margin: 35px auto;
+        font-size: 20px;
+        font-weight: 500;
+        max-width: 30ch;
+      }
+
+      .white {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+#donation-amount {
+  margin-top: 50px;
+}
+
+.form {
+  margin-bottom: 2rem;
+}

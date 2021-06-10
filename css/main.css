@@ -27,8 +27,9 @@ body {
   color: var(--secondary-color);
 }
 
-h1 {
+h2 {
   font-weight: bolder;
+  margin: 0;
 }
 
 .primary-title {
@@ -49,7 +50,7 @@ ul {
 
 .container {
   text-align: center;
-  margin: 20px;
+  margin: 0 5%;
 }
 
 .hide-mobile {
@@ -60,7 +61,14 @@ header {
   background: url("/images/banner.jpg") no-repeat center;
   background-size: 100% 100%;
   height: 200px;
+}
+
+.spacer {
   margin-bottom: 50px;
+}
+
+.small-spacer {
+  margin-bottom: 20px;
 }
 
 header .container {
@@ -75,6 +83,18 @@ header .nav-bar {
 
 .nav-bar img {
   width: 20px;
+}
+
+nav a .menu {
+  color: white;
+  background-color: var(--error-color);
+  box-shadow: 2px 5px 20px rgba(10, 1, 1, 0.3);
+  font-size: 1em;
+  padding: 0.4em;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  border-radius: 50%;
 }
 
 .card {
@@ -113,7 +133,7 @@ nav ul {
   text-align: left;
   color: var(--secondary-color);
   background: white;
-  height: 40%;
+  height: 20em;
   z-index: 7;
   padding-top: 2em;
   border-bottom-right-radius: 5px;
@@ -135,7 +155,7 @@ nav ul li:last-child a {
   font-weight: bolder;
   background-color: var(--error-color);
   color: white;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 nav ul li:last-child a:hover {
@@ -147,8 +167,7 @@ nav ul li:last-child a:hover {
 .specifications {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  margin-bottom: 50px;
+  justify-content: space-between;
 }
 
 .specifications i {
@@ -173,11 +192,6 @@ nav ul li:last-child a:hover {
   font-weight: bolder;
   color: var(--primary-color);
 }
-
-.themes-box {
-  margin-bottom: 50px;
-}
-
 .theme {
   margin: 10px;
 }
@@ -186,41 +200,78 @@ nav ul li:last-child a:hover {
   border-radius: 5px;
 }
 
+.provision {
+  text-align: justify;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.02);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+
+.provision h3 {
+  text-align: center;
+}
+
+.provision-text ul {
+  list-style-type: initial;
+  list-style-position: inside;
+}
+
+.provision-text ul li {
+  font-size: var(--regular-size);
+  margin-left: 35px;
+}
+
+.skills .provision-text p {
+  line-height: 1.8;
+}
+
+.provision-image {
+  width: 80px;
+  height: 80px;
+}
+
+.skills .provision-image {
+  width: 150px;
+}
 
 .donate {
   display: flex;
   flex-direction: column;
 }
 
-.donate img {
-  max-height: 100%;
-  max-width: 100%;
+.donate-image img {
+  width: 100%;
+  height: 100%;
 }
 
 .donate-explanation {
   background-color: var(--error-color);
   color: white;
-  padding: 5%;
   text-align: center;
+  padding: 0 1em 1em 1em;
 }
 
 .amounts {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .amount,
 .donate-button {
   background-color: var(--accent-color);
-  padding: 2%;
   cursor: pointer;
   border-radius: 5px;
   font-weight: bold;
+  padding: 5px;
 }
 
 .donate-button {
-  margin-top: 10px;
   background-color: var(--secondary-color);
 }
 
@@ -241,6 +292,11 @@ nav ul li:last-child a:hover {
   color: inherit;
 }
 
+.footer-menu li a:hover {
+  color: var(--error-color);
+  font-weight: bold;
+}
+
 .footer-menu li:nth-child(3) a {
   font-weight: bold;
 }
@@ -249,13 +305,10 @@ nav ul li:last-child a:hover {
   width: 100px;
 }
 
-
-
 /*carousel*/
 .owl-carousel .owl-stage {
   padding-bottom: 2em;
 }
-
 
 .owl-dots {
   width: fit-content;
@@ -266,8 +319,8 @@ nav ul li:last-child a:hover {
 }
 
 .owl-dot span {
-  height: .5em;
-  width: .5em;
+  height: 0.5em;
+  width: 0.5em;
   margin: 0 0.5em;
   border-radius: 100%;
   border: 1px solid var(--primary-color);
@@ -280,4 +333,158 @@ nav ul li:last-child a:hover {
 
 .owl-dot.active span {
   background-color: var(--primary-color);
+}
+
+@media only screen and (min-width: 500px) {
+  header {
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  h2 {
+    font-size: 2em;
+  }
+  .container {
+    margin: 0 10%;
+  }
+  header {
+    height: 300px;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  nav ul {
+    width: 50%;
+  }
+
+  .specifications {
+    justify-content: space-evenly;
+  }
+
+  .donate {
+    flex-direction: row;
+  }
+  .donate-image {
+    width: 100%;
+  }
+  .donate-explanation {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  header {
+    height: 400px;
+  }
+
+  .provision {
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.05);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    height: 500px;
+  }
+
+  .show-desktop {
+    display: inline;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
+  nav ul {
+    position: relative;
+    background: none;
+    padding: 0;
+    box-shadow: none;
+    margin-left: 100px;
+  }
+
+  nav ul li {
+    float: left;
+  }
+
+  nav ul li a {
+    padding: 0.25em 2em;
+  }
+
+  nav ul li a:hover {
+    font-weight: bold;
+    color: inherit;
+  }
+
+  nav ul li:last-child a {
+    background: var(--error-color);
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    width: 75%;
+  }
+
+  .provision {
+    /* height: 100vh; */
+  }
+
+  .donate-explanation {
+    text-align: justify;
+    padding: 2em 2em;
+  }
+
+  .donate-explanation h3 {
+    font-size: 1.5em;
+  }
+
+  .donate-explanation p {
+    font-size: 1.3em;
+  }
+
+  .amount,
+  .donate-button {
+    padding: 8px;
+  }
+  .donate-button {
+    float: right;
+  }
+
+  .footer-logos {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .footer-logos img {
+    width: 100px;
+  }
+
+  .footer-menu {
+    justify-content: flex-end;
+  }
+
+  .footer-menu a {
+    font-size: var(--small-size);
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  header {
+    height: 600px;
+  }
+
+  .donate-explanation {
+    text-align: justify;
+    padding: 2em 10em;
+  }
+
+  .donate-explanation h3 {
+    font-size: 1.8em;
+  }
+
+  .donate-explanation p {
+    font-size: 1.5em;
+  }
 }

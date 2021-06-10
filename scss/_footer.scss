@@ -1,0 +1,21 @@
+footer {
+  font-size: 0.8rem;
+  padding: 10px 0 5px;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .docs {
+      span {
+        display: block;
+        line-height: 1.3;
+
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
