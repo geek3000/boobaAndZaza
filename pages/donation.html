@@ -11,16 +11,272 @@
 
 <body>
   <header>
+    <nav>
+      <div class="container">
+        <div class="nav-wrapper">
+          <a id="btnHamburger" href="#" class="menu__toggle hide-for-desktop">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
 
+          <div class="nav__items hide-for-mobile">
+            <ul class="link__list">
+              <li class="nav__item">
+                <a class="nav__link" href="../index.html">Home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./about.html">About Us</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Contact</a>
+              </li>
+              <li class="nav__item donate">
+                <a class="nav__link donate" href="./donation.html">Donate</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu hide-for-desktop" id="mobile-menu">
+      <div class="container">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="../index.html">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./about.html">About Us</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Contact</a>
+          </li>
+          <li class="menu__item donate">
+            <a class="menu__link" href="./donation.html">Donate</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </header>
 
   <main>
+    <div class="top-banner">
+      <div class="wrapper">
+        <div class="banner-img">
+          <img src="../images/banner_01_donation_page.jpg" alt="learning never stop">
+        </div>
+        <div class="banner-text">
+          <div class="content">
+            <h1><a href="#"><span class="black">#</span>Learning<span class="black">Never</span>Stops</a></h1>
+            <div class="covid">COVID-19 Education Response</div>
+            <div class="help">Help to build a better future and leave no child behind</div>
+            <div class="white">Join our founders circle with a gift</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <section id="donation-amount">
+      <div class="container">
+        <h2 class="section-title">Select your donation amount</h2>
+        <div class="amounts">
+          <div class="amount-btn">$25</div>
+          <div class="amount-btn">$45</div>
+          <div class="amount-btn">$75</div>
+          <div class="amount-btn">$100</div>
+        </div>
+        <input type="text" placeholder="$ Other (minimum of $5)" class="other-amount">
+      </div>
+    </section>
+
+    <div class="payment">
+      <div class="container">
+        <h2>Please select your payment method</h2>
+
+        <div class="card-payment">
+          <h2>Card payment</h2>
+          <div class="cards-img">
+            <img src="" alt="payment cards">
+          </div>
+        </div>
+
+        <div class="payment-form">
+          <form action="" class="form">
+            <div class="donor-infos">
+              <div class="form-title">Donor Information</div>
+              <div class="form-group">
+                <label for="name">Name*</label>
+                <input type="text" class="form-control" name="firstName" placeholder="First" id="firstName">
+                <input type="text" class="form-control" name="lastName" placeholder="Last" id="lastName">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address*</label>
+                <input type="email" class="form-control" name="email" placeholder="email@exemple.com" id="email">
+              </div>
+
+              <div class="form-group">
+                <label for="fone">Fone number</label>
+                <input type="text" class="form-control" name="fone" placeholder="XXX.XXX.XXX" id="fone">
+              </div>
+
+              <div class="form-group">
+                <label for="organization">Donor organization</label>
+                <input type="text" class="form-control" name="organization" placeholder="" id="organization">
+              </div>
+            </div>
+
+            <div class="payment-details">
+              <div class="form-title">Payment Details</div>
+              <div class="form-group">
+                <label for="name">Name on card*</label>
+                <input type="text" class="form-control" name="firstName" placeholder="First" id="firstName">
+                <input type="text" class="form-control" name="lastName" placeholder="Last" id="lastName">
+              </div>
+
+              <div class="form-group">
+                <input type="checkbox" id="same-infos" name="same-infos">
+                <label for="same-infos">Same as Donor Information</label>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Credit card number*</label>
+                <input type="email" class="form-control" name="email" placeholder="email@exemple.com" id="email">
+              </div>
+
+              <div class="cards-img">
+                <img src="" alt="payment cards">
+              </div>
+
+              <div class="form-group">
+                <label for="fone">Expiration*</label>
+                <input type="date" class="form-control" name="month" placeholder="Month" id="month">
+                <input type="date" class="form-control" name="year" placeholder="Year" id="year">
+              </div>
+
+              <div class="form-group">
+                <label for="cvc">CVC</label>
+                <input type="text" class="form-control" name="cvc" placeholder="" id="cvc">
+              </div>
+
+              <div class="form-group">
+                <label for="cvc">Adress 1*</label>
+                <input type="text" class="form-control" name="address1" placeholder="" id="address1">
+              </div>
+
+              <div class="form-group">
+                <label for="cvc">Address 2</label>
+                <input type="text" class="form-control" name="address2" placeholder="" id="address2">
+              </div>
+
+              <div class="form-group">
+                <label for="zip">Zip code</label>
+                <input type="text" class="form-control" name="zip" placeholder="" id="zip">
+              </div>
+
+              <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" class="form-control" name="country" placeholder="" id="country">
+              </div>
+
+              <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" class="form-control" name="city" placeholder="" id="city">
+              </div>
+
+              <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" class="form-control" name="state" placeholder="" id="state">
+              </div>
+            </div>
+          </form>
+
+          <form action="https://www.paypal.com/donate" method="post" target="_top">
+            <input type="hidden" name="hosted_button_id" value="PG98WKYWNUXPC" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0"
+              name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_CM/i/scr/pixel.gif" width="1" height="1" />
+          </form>
+
+          <div id="smart-button-container" class="mt-5">
+            <div style="text-align: left;">
+              <div id="paypal-button-container"></div>
+            </div>
+          </div>
+          <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=GBP"
+            data-sdk-integration-source="button-factory"></script>
+          <script>
+            function initPayPalButton() {
+              paypal.Buttons({
+                style: {
+                  shape: 'rect',
+                  color: 'gold',
+                  layout: 'vertical',
+                  label: 'paypal',
+
+                },
+
+                createOrder: function (data, actions) {
+                  return actions.order.create({
+                    purchase_units: [{ "description": "Booba&zaza movie", "amount": { "currency_code": "GBP", "value": 45 } }]
+                  });
+                },
+
+                onApprove: function (data, actions) {
+                  return actions.order.capture().then(function (details) {
+                    alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                  });
+                },
+
+                onError: function (err) {
+                  console.log(err);
+                }
+              }).render('#paypal-button-container');
+            }
+            initPayPalButton();
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-banner">
+      <div class="container">
+        <div class="wrapper">
+          <div class="contact-infos">
+            <div class="name">General Enquiries:</div>
+            <div><a href="mailto:info@boubaandzaza.com" target="blank">info@boubaandzaza.com</a></div>
+            <div class="name">Partnerships and Donations:</div>
+            <div><a href="mailto:Admin@boubaandzaza.com" target="blank">Admin@boubaandzaza.com</a></div>
+            <div class="name">Phone Number</div>
+            <div>+44 (0) 7412 000 159</div>
+          </div>
+
+          <div class="partners-logos">
+            <div class="partner-logo">
+              <img src="../images/mlapon_logo.jpg" alt="partner-logo">
+            </div>
+            <div class="partner-logo">
+              <img src="../images/unesco_logo.png" alt="partner-logo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer>
-
+    <div class="container">
+      <div class="wrapper">
+        <div class="docs">
+          <span><a href="../images/faq.pdf" download>FAQ</a></span>
+          <span><a href="../images/policy.pdf" download>PRIVACY POLICY</a></span>
+        </div>
+        <span>&copy; 2021</span>
+      </div>
+    </div>
   </footer>
 </body>
+<script src="../js/main.js"></script>
 
 </html>
