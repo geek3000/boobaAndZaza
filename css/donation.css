@@ -191,4 +191,21 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
   opacity: 0.5;
 }
 
+footer {
+  font-size: 0.8rem;
+  padding: 10px 0 5px;
+}
+footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+footer .wrapper .docs span {
+  display: block;
+  line-height: 1.3;
+}
+footer .wrapper .docs span a:hover {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=donation.css.map */
