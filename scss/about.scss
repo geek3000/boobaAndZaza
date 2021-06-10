@@ -97,10 +97,39 @@ section {
         }
 
         .text-aside-text {
-          margin-top: 1.5rem;
+          margin-top: 0.8rem;
           padding: 1.5rem;
           background-color: #eee;
           margin-bottom: 75px;
+        }
+      }
+    }
+  }
+
+  &#partnerships {
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      overflow-x: scroll;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      .partner-logo {
+        flex: 1 0 250px;
+        flex-wrap: nowrap;
+        margin-right: 1rem;
+        max-width: 25%;
+        border: 1px solid #eee;
+
+        img {
+          height: 100%;
+          object-fit: contain;
         }
       }
     }

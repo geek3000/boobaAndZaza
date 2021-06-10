@@ -277,10 +277,32 @@ section#who-we-are .text-summary-wrapper .text-aside .text-aside-img .caption {
   color: #fff;
 }
 section#who-we-are .text-summary-wrapper .text-aside .text-aside-text {
-  margin-top: 1.5rem;
+  margin-top: 0.8rem;
   padding: 1.5rem;
   background-color: #eee;
   margin-bottom: 75px;
+}
+section#partnerships .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+section#partnerships .wrapper::-webkit-scrollbar {
+  display: none;
+}
+section#partnerships .wrapper .partner-logo {
+  flex: 1 0 250px;
+  flex-wrap: nowrap;
+  margin-right: 1rem;
+  max-width: 25%;
+  border: 1px solid #eee;
+}
+section#partnerships .wrapper .partner-logo img {
+  height: 100%;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=about.css.map */
