@@ -19,7 +19,7 @@ body {
   padding: 0;
   font-family: "Montserrat", sans-serif;
   line-height: 1.875rem;
-  color: #636c98;
+  color: #052b5d;
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -183,7 +183,7 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
-  color: #636c98;
+  color: #052b5d;
   display: block;
   transition: 0.3s;
 }
@@ -212,13 +212,29 @@ section p {
   font-size: 1.0625rem;
   line-height: 1.875rem;
   padding: 0 0 1.875rem;
-  max-width: 90ch;
+}
+@media (min-width: 62em) {
+  section p {
+    max-width: 90ch;
+  }
 }
 section#who-we-are {
   padding-top: 6.75rem;
 }
+@media (min-width: 62em) {
+  section#who-we-are .text-summary-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+section#who-we-are .text-summary-wrapper .text-main {
+  border-top: 4px double #052b5d;
+  padding-top: 2rem;
+  flex: 2;
+}
 section#who-we-are .text-summary-wrapper .text-main blockquote {
   margin-bottom: 1.875rem;
+  color: #636c98;
 }
 section#who-we-are .text-summary-wrapper .text-main blockquote p::before {
   content: open-quote;
@@ -231,16 +247,9 @@ section#who-we-are .text-summary-wrapper .text-main blockquote p::after {
   color: #f55f44;
 }
 @media (min-width: 62em) {
-  section#who-we-are .text-summary-wrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
+  section#who-we-are .text-summary-wrapper .text-main {
+    margin-right: 2rem;
   }
-}
-section#who-we-are .text-summary-wrapper .text-main {
-  border-top: 4px double #636c98;
-  padding-top: 2rem;
-  flex: 2;
 }
 section#who-we-are .text-summary-wrapper .text-aside {
   flex: 1;
@@ -271,6 +280,7 @@ section#who-we-are .text-summary-wrapper .text-aside .text-aside-text {
   margin-top: 1.5rem;
   padding: 1.5rem;
   background-color: #eee;
+  margin-bottom: 75px;
 }
 
 /*# sourceMappingURL=about.css.map */
