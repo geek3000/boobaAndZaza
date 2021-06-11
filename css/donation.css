@@ -310,7 +310,108 @@ footer .wrapper .docs span a:hover {
   font-weight: 600;
 }
 
+.card-payment {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (min-width: 40em) {
+  .card-payment {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.names-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (min-width: 40em) {
+  .names-group {
+    gap: 1px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.email-group {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 40em) {
+  .email-group {
+    gap: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.credit-card-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (min-width: 40em) {
+  .credit-card-group {
+    gap: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .credit-card-group .cards-img {
+    position: relative;
+  }
+  .credit-card-group .cards-img img {
+    position: absolute;
+    top: 5px;
+  }
+}
+
+.expiration-group {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 40em) {
+  .expiration-group {
+    gap: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .expiration-group .form-group:first-child {
+    flex: 2;
+  }
+}
+.expiration-group .date-group {
+  display: flex;
+  gap: 5px;
+}
+@media (min-width: 40em) {
+  .expiration-group .date-group {
+    gap: 30px;
+  }
+}
+
+.zip-group,
+.city-group {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 40em) {
+  .zip-group,
+.city-group {
+    gap: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .zip-group .form-group:first-child,
+.city-group .form-group:first-child {
+    flex: 2;
+  }
+}
+
 .cards-img {
+  flex: 1;
   width: 100%;
   height: 100px;
   max-width: 300px;
@@ -376,6 +477,7 @@ footer .wrapper .docs span a:hover {
 
 .form-group {
   margin-top: 1.3rem;
+  flex: 1;
 }
 .form-group label {
   display: block;
@@ -400,6 +502,13 @@ footer .wrapper .docs span a:hover {
 
 .chekbox-group {
   font-weight: 500;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.chekbox-group label {
+  font-size: 20px;
+  text-transform: capitalize;
+  letter-spacing: -1px;
 }
 
 /*# sourceMappingURL=donation.css.map */

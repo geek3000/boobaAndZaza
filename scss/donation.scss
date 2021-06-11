@@ -76,7 +76,107 @@
   }
 }
 
+.payment {
+}
+
+.card-payment {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @include breakpoint-up(medium) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.names-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @include breakpoint-up(medium) {
+    gap: 1px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.email-group {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint-up(medium) {
+    gap: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.credit-card-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @include breakpoint-up(medium) {
+    gap: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .cards-img {
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 5px;
+      }
+    }
+  }
+}
+
+.expiration-group {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint-up(medium) {
+    gap: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .form-group:first-child {
+      flex: 2;
+    }
+  }
+
+  .date-group {
+    display: flex;
+    gap: 5px;
+
+    @include breakpoint-up(medium) {
+      gap: 30px;
+    }
+  }
+}
+
+.zip-group,
+.city-group {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint-up(medium) {
+    gap: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .form-group:first-child {
+      flex: 2;
+    }
+  }
+}
+
 .cards-img {
+  flex: 1;
   width: 100%;
   height: 100px;
   max-width: 300px;
@@ -147,6 +247,7 @@
 
 .form-group {
   margin-top: 1.3rem;
+  flex: 1;
 
   label {
     display: block;
@@ -174,4 +275,12 @@
 
 .chekbox-group {
   font-weight: 500;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+
+  label {
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: -1px;
+  }
 }

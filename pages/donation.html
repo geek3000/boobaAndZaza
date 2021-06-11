@@ -109,18 +109,21 @@
               <div class="title">Donor Information</div>
               <div class="form-group">
                 <label for="name">Name*</label>
-                <input type="text" class="form-control" name="firstName" placeholder="First" id="firstName">
-                <input type="text" class="form-control" name="lastName" placeholder="Last" id="lastName">
+                <div class="names-group">
+                  <input type="text" class="form-control" name="firstName" placeholder="First" id="firstName">
+                  <input type="text" class="form-control" name="lastName" placeholder="Last" id="lastName">
+                </div>
               </div>
 
-              <div class="form-group">
-                <label for="email">Email Address*</label>
-                <input type="email" class="form-control" name="email" placeholder="email@exemple.com" id="email">
-              </div>
-
-              <div class="form-group">
-                <label for="fone">Fone number</label>
-                <input type="text" class="form-control" name="fone" placeholder="XXX.XXX.XXX" id="fone">
+              <div class="email-group">
+                <div class="form-group">
+                  <label for="email">Email Address*</label>
+                  <input type="email" class="form-control" name="email" placeholder="email@exemple.com" id="email">
+                </div>
+                <div class="form-group">
+                  <label for="fone">Fone number</label>
+                  <input type="text" class="form-control" name="fone" placeholder="XXX.XXX.XXX" id="fone">
+                </div>
               </div>
 
               <div class="form-group">
@@ -133,8 +136,10 @@
               <div class="title">Payment Details</div>
               <div class="form-group">
                 <label for="name">Name on card*</label>
-                <input type="text" class="form-control" name="firstName" placeholder="First" id="firstName">
-                <input type="text" class="form-control" name="lastName" placeholder="Last" id="lastName">
+                <div class="names-group">
+                  <input type="text" class="form-control" name="firstName" placeholder="First" id="firstName">
+                  <input type="text" class="form-control" name="lastName" placeholder="Last" id="lastName">
+                </div>
               </div>
 
               <div class="chekbox-group">
@@ -142,24 +147,28 @@
                 <label for="same-infos">Same as Donor Information</label>
               </div>
 
-              <div class="form-group">
-                <label for="email">Credit card number*</label>
-                <input type="text" class="form-control" name="email" placeholder="" id="email">
+              <div class="credit-card-group">
+                <div class="form-group">
+                  <label for="email">Credit card number*</label>
+                  <input type="text" class="form-control" name="email" placeholder="" id="email">
+                </div>
+                <div class="cards-img">
+                  <img src="../images/stripe-cards.png" alt="payment cards">
+                </div>
               </div>
 
-              <div class="cards-img">
-                <img src="../images/payment-cards.png" alt="payment cards">
-              </div>
-
-              <div class="form-group">
-                <label for="fone">Expiration*</label>
-                <input type="date" class="form-control" name="month" placeholder="Month" id="month">
-                <input type="date" class="form-control" name="year" placeholder="Year" id="year">
-              </div>
-
-              <div class="form-group">
-                <label for="cvc">CVC</label>
-                <input type="text" class="form-control" name="cvc" placeholder="" id="cvc">
+              <div class="expiration-group">
+                <div class="form-group">
+                  <label for="fone">Expiration*</label>
+                  <div class="date-group">
+                    <input type="date" class="form-control" name="month" placeholder="Month" id="month">
+                    <input type="date" class="form-control" name="year" placeholder="Year" id="year">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="cvc">CVC</label>
+                  <input type="text" class="form-control" name="cvc" placeholder="" id="cvc">
+                </div>
               </div>
 
               <div class="form-group">
@@ -172,24 +181,27 @@
                 <input type="text" class="form-control" name="address2" placeholder="" id="address2">
               </div>
 
-              <div class="form-group">
-                <label for="zip">Zip code</label>
-                <input type="text" class="form-control" name="zip" placeholder="" id="zip">
+              <div class="zip-group">
+                <div class="form-group">
+                  <label for="zip">Zip code</label>
+                  <input type="text" class="form-control" name="zip" placeholder="" id="zip">
+                </div>
+
+                <div class="form-group">
+                  <label for="country">Country</label>
+                  <input type="text" class="form-control" name="country" placeholder="" id="country">
+                </div>
               </div>
 
-              <div class="form-group">
-                <label for="country">Country</label>
-                <input type="text" class="form-control" name="country" placeholder="" id="country">
-              </div>
-
-              <div class="form-group">
-                <label for="city">City</label>
-                <input type="text" class="form-control" name="city" placeholder="" id="city">
-              </div>
-
-              <div class="form-group">
-                <label for="state">State</label>
-                <input type="text" class="form-control" name="state" placeholder="" id="state">
+              <div class="city-group">
+                <div class="form-group">
+                  <label for="city">City</label>
+                  <input type="text" class="form-control" name="city" placeholder="" id="city">
+                </div>
+                <div class="form-group">
+                  <label for="state">State</label>
+                  <input type="text" class="form-control" name="state" placeholder="" id="state">
+                </div>
               </div>
             </div>
           </form>
