@@ -6,6 +6,37 @@
 @import 'contact-banner';
 @import 'footer';
 
+header {
+  min-height: 50vh;
+
+  @include breakpoint-up(medium2) {
+    min-height: 620px;
+  }
+
+  .hero-banner {
+    position: absolute;
+
+    @supports (inset: 0) {
+      inset: 0;
+    }
+
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    img {
+      height: 100%;
+      object-fit: unset;
+      object-position: top;
+
+      @include breakpoint-up(medium2) {
+        object-fit: cover;
+      }
+    }
+  }
+}
+
 section {
   text-align: center;
 
@@ -30,6 +61,37 @@ section {
 
     @include breakpoint-up(medium2) {
       max-width: 90ch;
+    }
+  }
+
+  &#first-summary {
+    margin-top: 60px;
+
+    .primary-title {
+      max-width: 30ch;
+
+      @include breakpoint-up(medium2) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+    }
+
+    .specifications {
+      display: flex;
+      justify-content: space-between;
+      max-width: 30ch;
+      margin: 20px auto;
+      padding: 10px 30px;
+      border-radius: 5px;
+      box-shadow: 3px 10px 20px rgb(0 0 0 / 10%);
+
+      @include breakpoint-up(medium2) {
+        margin: 40px 0;
+      }
+
+      span {
+        font-weight: 600;
+      }
     }
   }
 }

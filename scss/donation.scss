@@ -38,6 +38,10 @@
         margin: 20px auto 0;
         padding-bottom: 20px;
         color: #111;
+
+        @include breakpoint-up(medium2) {
+          margin-right: 3rem;
+        }
       }
 
       h1 {
