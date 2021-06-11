@@ -6,3 +6,30 @@
 @import 'contact-banner';
 @import 'footer';
 
+section {
+  text-align: center;
+
+  @include breakpoint-up(medium) {
+    text-align: left;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+    margin-bottom: 1.3rem;
+    margin-top: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $error-color;
+  }
+
+  p {
+    font-size: 1.0625rem;
+    line-height: 1.875rem;
+    padding: 0 0 1.875rem;
+
+    @include breakpoint-up(medium2) {
+      max-width: 90ch;
+    }
+  }
+}

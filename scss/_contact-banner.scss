@@ -28,14 +28,20 @@
     .partners-logos {
       flex: 1;
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
+      gap: 0.1rem;
+
+      @include breakpoint-down(small) {
+        flex-wrap: wrap;
+      }
 
       .partner-logo {
         flex: 1 0 200px;
         max-width: 100%;
-        height: 150px;
-        border: 1px solid #eee;
+        max-height: 150px;
+
+        @include breakpoint-up(medium) {
+          height: 150px;
+        }
 
         img {
           height: 100%;

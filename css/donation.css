@@ -217,14 +217,22 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
 .contact-banner .wrapper .partners-logos {
   flex: 1;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.1rem;
+}
+@media (max-width: 39.9375em) {
+  .contact-banner .wrapper .partners-logos {
+    flex-wrap: wrap;
+  }
 }
 .contact-banner .wrapper .partners-logos .partner-logo {
   flex: 1 0 200px;
   max-width: 100%;
-  height: 150px;
-  border: 1px solid #eee;
+  max-height: 150px;
+}
+@media (min-width: 40em) {
+  .contact-banner .wrapper .partners-logos .partner-logo {
+    height: 150px;
+  }
 }
 .contact-banner .wrapper .partners-logos .partner-logo img {
   height: 100%;
