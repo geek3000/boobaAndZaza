@@ -56,6 +56,32 @@ blockquote {
   font-style: italic;
 }
 
+/*carousel*/
+.owl-carousel .owl-stage {
+  padding-bottom: 2em;
+}
+
+.owl-dots {
+  width: fit-content;
+  margin: 0 auto 1em auto;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl-dot span {
+  height: 0.5em;
+  width: 0.5em;
+  margin: 0 0.5em;
+  border-radius: 100%;
+  border: 1px solid var(--primary-color);
+  display: block;
+}
+
+.owl-dot:focus {
+  outline: none;
+}
+
 .container {
   position: relative;
   z-index: 100;

@@ -65,10 +65,11 @@ section {
   }
 
   &#first-summary {
-    margin-top: 60px;
+    margin-top: 70px;
 
     .primary-title {
       max-width: 30ch;
+      line-height: 2.25rem;
 
       @include breakpoint-up(medium2) {
         font-size: 2rem;
@@ -80,12 +81,12 @@ section {
       display: flex;
       justify-content: space-between;
       max-width: 30ch;
-      margin: 20px auto;
+      margin: 40px auto;
       padding: 10px 30px;
       border-radius: 5px;
       box-shadow: 3px 10px 20px rgb(0 0 0 / 10%);
 
-      @include breakpoint-up(medium2) {
+      @include breakpoint-up(medium) {
         margin: 40px 0;
       }
 
@@ -93,5 +94,109 @@ section {
         font-weight: 600;
       }
     }
+  }
+
+  &#twelve-themes {
+    .wrapper {
+      margin-top: 40px;
+    }
+  }
+
+  &#donation-provide {
+    .wrapper {
+      margin-top: 40px;
+
+      .owl-elements {
+      }
+    }
+
+    .donation-input {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      .di-img {
+        height: 200px;
+
+        img {
+          width: 30%;
+          margin: auto;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      .di-text {
+        color: #fff;
+        padding: 20px 15px;
+
+        .text-title {
+          text-align: center;
+          font-size: 18px;
+          margin: 20px auto;
+          text-transform: uppercase;
+        }
+
+        .text-body {
+          p,
+          ul {
+            font-size: 15px;
+            line-height: 26px;
+
+            li {
+              list-style-type: circle;
+              margin-left: 30px;
+            }
+          }
+
+          @include breakpoint-down(small) {
+            text-align: left;
+          }
+        }
+      }
+
+      &.skills {
+        .di-img {
+          border: 2px solid #ff5050;
+
+          img {
+            width: 47%;
+          }
+        }
+
+        .di-text {
+          background-color: #ff5050;
+        }
+      }
+
+      &.toolbox {
+        .di-img {
+          border: 2px solid #a8d08c;
+        }
+
+        .di-text {
+          background-color: #a8d08c;
+        }
+      }
+
+      &.impact {
+        .di-img {
+          border: 2px solid #00b0f0;
+        }
+
+        .di-text {
+          background-color: #00b0f0;
+        }
+      }
+    }
+  }
+}
+
+.orange {
+  color: $error-color;
+  font-weight: 500;
+
+  a {
+    text-decoration: underline;
   }
 }
