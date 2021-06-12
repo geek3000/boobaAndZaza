@@ -7,19 +7,20 @@
 @import 'footer';
 
 header {
-  min-height: 40vh;
+  min-height: 80vh;
 
-  @include breakpoint-up(medium) {
-    min-height: 70vh;
+  @media (max-width: 40em) and (orientation: portrait) {
+    min-height: 40vh;
+  }
+
+  @media (min-width: 40em) and (orientation: landscape) {
+    min-height: 90vh;
   }
 
   @include breakpoint-up(medium2) {
     min-height: 620px;
   }
 
-  @media (max-width: 992px and landscape) {
-    min-height: 90vh;
-  }
 
   .hero-banner {
     position: absolute;
@@ -38,7 +39,7 @@ header {
       object-fit: unset;
       object-position: top;
 
-      @include breakpoint-up(medium2) {
+      @include breakpoint-up(medium) {
         object-fit: cover;
       }
     }
@@ -217,11 +218,9 @@ section {
     justify-content: center;
     flex-direction: column;
 
-    @include breakpoint-up(medium) {
+    @media (min-width: 40em) and (orientation: landscape) {
       flex-direction: row;
-    }
 
-    @media (max-width: 992px and landscape) {
       .banner-img {
         flex: 1;
 
@@ -235,9 +234,17 @@ section {
       }
     }
 
-    .banner-img {
-      flex: 1 0 28%;
+    @include breakpoint-up(large) {
+      .banner-img {
+        flex: 1 0 28%;
+      }
 
+      .banner-text {
+        flex: 1 0 72%;
+      }
+    }
+
+    .banner-img {
       img {
         height: 100%;
         object-fit: cover;
@@ -245,7 +252,6 @@ section {
     }
 
     .banner-text {
-      flex: 1 0 72%;
       background-color: $secondary-color;
       text-align: center;
       display: flex;

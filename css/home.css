@@ -293,21 +293,21 @@ footer .wrapper .docs span a:hover {
 }
 
 header {
-  min-height: 40vh;
+  min-height: 80vh;
 }
-@media (min-width: 40em) {
+@media (max-width: 40em) and (orientation: portrait) {
   header {
-    min-height: 70vh;
+    min-height: 40vh;
+  }
+}
+@media (min-width: 40em) and (orientation: landscape) {
+  header {
+    min-height: 90vh;
   }
 }
 @media (min-width: 62em) {
   header {
     min-height: 620px;
-  }
-}
-@media (max-width: landscape) {
-  header {
-    min-height: 90vh;
   }
 }
 header .hero-banner {
@@ -327,7 +327,7 @@ header .hero-banner img {
   object-fit: unset;
   object-position: top;
 }
-@media (min-width: 62em) {
+@media (min-width: 40em) {
   header .hero-banner img {
     object-fit: cover;
   }
@@ -473,12 +473,10 @@ section#donation-provide .donation-input.impact .di-text {
   justify-content: center;
   flex-direction: column;
 }
-@media (min-width: 40em) {
+@media (min-width: 40em) and (orientation: landscape) {
   .bottom-banner .wrapper {
     flex-direction: row;
   }
-}
-@media (max-width: landscape) {
   .bottom-banner .wrapper .banner-img {
     flex: 1;
   }
@@ -489,15 +487,19 @@ section#donation-provide .donation-input.impact .di-text {
     flex: 1;
   }
 }
-.bottom-banner .wrapper .banner-img {
-  flex: 1 0 28%;
+@media (min-width: 64em) {
+  .bottom-banner .wrapper .banner-img {
+    flex: 1 0 28%;
+  }
+  .bottom-banner .wrapper .banner-text {
+    flex: 1 0 72%;
+  }
 }
 .bottom-banner .wrapper .banner-img img {
   height: 100%;
   object-fit: cover;
 }
 .bottom-banner .wrapper .banner-text {
-  flex: 1 0 72%;
   background-color: #ffa45c;
   text-align: center;
   display: flex;
