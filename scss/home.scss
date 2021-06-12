@@ -226,7 +226,6 @@ section {
         flex: 1;
 
         img {
-          max-height: initial;
           object-fit: cover;
         }
       }
@@ -241,12 +240,7 @@ section {
 
       img {
         height: 100%;
-        max-height: 600px;
         object-fit: cover;
-
-        @include breakpoint-up(medium) {
-          object-fit: contain;
-        }
       }
     }
 
@@ -254,11 +248,11 @@ section {
       flex: 1 0 72%;
       background-color: $secondary-color;
       text-align: center;
-      padding: 2rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 1rem;
 
       .content {
         margin: 20px auto 0;
@@ -296,10 +290,10 @@ section {
           font-size: 24px;
           line-height: 2.475rem;
           padding: 0 0 1.875rem;
-          max-width: 30ch;
+          max-width: 35ch;
           margin: auto;
           font-weight: 100;
-          opacity: 0.85;
+          opacity: 0.8;
 
           @include breakpoint-up(medium) {
             font-size: 30px;
@@ -308,10 +302,30 @@ section {
       }
 
       .white {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
         text-transform: initial;
         color: #fff;
         font-size: 20px;
         font-weight: 500;
+
+        @include breakpoint-up(medium) {
+          flex-direction: row;
+        }
+
+        .donate-btn {
+          text-transform: capitalize;
+          background-color: $primary-color;
+          padding: 20px;
+          border-radius: 10px;
+
+          &:hover {
+            background-color: $primary-light;
+          }
+        }
       }
     }
   }

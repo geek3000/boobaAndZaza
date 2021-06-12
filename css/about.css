@@ -262,6 +262,7 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
   flex: 1;
   max-width: 100%;
   max-height: 150px;
+  min-width: 150px;
 }
 @media (min-width: 40em) {
   .contact-banner .wrapper .partners-logos .partner-logo {

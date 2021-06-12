@@ -262,6 +262,7 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
   flex: 1;
   max-width: 100%;
   max-height: 150px;
+  min-width: 150px;
 }
 @media (min-width: 40em) {
   .contact-banner .wrapper .partners-logos .partner-logo {
@@ -482,7 +483,6 @@ section#donation-provide .donation-input.impact .di-text {
     flex: 1;
   }
   .bottom-banner .wrapper .banner-img img {
-    max-height: initial;
     object-fit: cover;
   }
   .bottom-banner .wrapper .banner-text {
@@ -494,23 +494,17 @@ section#donation-provide .donation-input.impact .di-text {
 }
 .bottom-banner .wrapper .banner-img img {
   height: 100%;
-  max-height: 600px;
   object-fit: cover;
-}
-@media (min-width: 40em) {
-  .bottom-banner .wrapper .banner-img img {
-    object-fit: contain;
-  }
 }
 .bottom-banner .wrapper .banner-text {
   flex: 1 0 72%;
   background-color: #ffa45c;
   text-align: center;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 .bottom-banner .wrapper .banner-text .content {
   margin: 20px auto 0;
@@ -545,10 +539,10 @@ section#donation-provide .donation-input.impact .di-text {
   font-size: 24px;
   line-height: 2.475rem;
   padding: 0 0 1.875rem;
-  max-width: 30ch;
+  max-width: 35ch;
   margin: auto;
   font-weight: 100;
-  opacity: 0.85;
+  opacity: 0.8;
 }
 @media (min-width: 40em) {
   .bottom-banner .wrapper .banner-text .help p {
@@ -556,10 +550,29 @@ section#donation-provide .donation-input.impact .di-text {
   }
 }
 .bottom-banner .wrapper .banner-text .white {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   text-transform: initial;
   color: #fff;
   font-size: 20px;
   font-weight: 500;
+}
+@media (min-width: 40em) {
+  .bottom-banner .wrapper .banner-text .white {
+    flex-direction: row;
+  }
+}
+.bottom-banner .wrapper .banner-text .white .donate-btn {
+  text-transform: capitalize;
+  background-color: #052b5d;
+  padding: 20px;
+  border-radius: 10px;
+}
+.bottom-banner .wrapper .banner-text .white .donate-btn:hover {
+  background-color: #636c98;
 }
 
 /*# sourceMappingURL=home.css.map */
