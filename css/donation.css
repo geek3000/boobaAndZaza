@@ -335,7 +335,7 @@ footer .wrapper .docs span a:hover {
 }
 .top-banner .wrapper .banner-text .content {
   padding: 20px 5px;
-  color: #111;
+  color: #333;
 }
 @media (min-width: 40em) {
   .top-banner .wrapper .banner-text .content {
@@ -353,7 +353,7 @@ footer .wrapper .docs span a:hover {
   }
 }
 .top-banner .wrapper .banner-text h1 .black {
-  color: #111;
+  color: #333;
 }
 .top-banner .wrapper .banner-text .covid {
   margin-top: 15px;
@@ -376,6 +376,10 @@ footer .wrapper .docs span a:hover {
 .form {
   max-width: 700px;
   margin-bottom: 2rem;
+}
+
+.paypal-btn {
+  height: 50px;
 }
 
 .card-payment {
@@ -509,7 +513,7 @@ footer .wrapper .docs span a:hover {
 
 .black {
   line-height: 36px;
-  color: #111;
+  color: #333;
 }
 
 #donation-amounts {

@@ -43,7 +43,7 @@
 
       .content {
         padding: 20px 5px;
-        color: #111;
+        color: #333;
 
         @include breakpoint-up(medium) {
           padding: 40px 30px;
@@ -60,7 +60,7 @@
         }
 
         .black {
-          color: #111;
+          color: #333;
         }
       }
 
@@ -90,6 +90,10 @@
 .form {
   max-width: 700px;
   margin-bottom: 2rem;
+}
+
+.paypal-btn {
+  height: 50px;
 }
 
 .card-payment {
@@ -220,7 +224,7 @@
 
 .black {
   line-height: 36px;
-  color: #111;
+  color: #333;
 }
 
 #donation-amounts {
