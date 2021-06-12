@@ -8,17 +8,27 @@
 @import 'footer';
 
 header {
-  min-height: 80vh;
-
   @media (max-width: 40em) and (orientation: portrait) {
-    min-height: 40vh;
+    min-height: 200px;
+  }
+
+  @media (min-width: 500px) {
+    min-height: 250px;
   }
 
   @media (min-width: 40em) and (orientation: landscape) {
     min-height: 90vh;
   }
 
+  @media (min-width: 750px) {
+    min-height: 400px;
+  }
+
   @include breakpoint-up(medium2) {
+    min-height: 500px;
+  }
+
+  @include breakpoint-up(xlarge) {
     min-height: 620px;
   }
 
@@ -36,10 +46,9 @@ header {
 
     img {
       height: 100%;
-      object-fit: unset;
       object-position: top;
 
-      @include breakpoint-up(medium) {
+      @include breakpoint-up(xlarge) {
         object-fit: cover;
       }
     }
@@ -95,7 +104,6 @@ section {
     .donation-input {
       display: flex;
       flex-direction: column;
-      //gap: 5px;
       border: 2px solid #eee;
       border-radius: 5px;
 
@@ -297,11 +305,23 @@ section {
         font-size: 20px;
         font-weight: 500;
 
+        @supports not (gap: 20px) {
+          .donate-btn {
+            margin-top: 20px;
+
+            @include breakpoint-up(medium) {
+              margin-top: 0;
+              margin-left: 20px;
+            }
+          }
+        }
+
         @include breakpoint-up(medium) {
           flex-direction: row;
         }
 
         .donate-btn {
+          display: inline-block;
           text-transform: capitalize;
           background-color: $primary-color;
           padding: 20px;
