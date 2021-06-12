@@ -224,7 +224,7 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
 .contact-banner {
   padding-top: 30px;
   margin-top: 70px;
-  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
 }
 .contact-banner .wrapper {
   display: flex;
@@ -280,13 +280,15 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
 
 footer {
   font-size: 0.8rem;
-  padding: 10px 0 5px;
   color: #333;
 }
 footer .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  padding: 10px 0 5px;
+  margin-top: 10px;
+  border-top: 1px solid #eee;
 }
 footer .wrapper .docs span {
   display: block;
