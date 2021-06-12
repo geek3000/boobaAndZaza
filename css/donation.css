@@ -103,7 +103,7 @@ blockquote {
   }
 }
 
-@media (max-width: 61.9375em) {
+@media (max-width: 63.9375em) {
   .hide-for-mobile {
     display: none;
   }
@@ -144,7 +144,7 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
   opacity: 0.6;
 }
 
-@media (max-width: 61.9375em) {
+@media (max-width: 63.9375em) {
   .menu__toggle {
     position: relative;
     display: block;
@@ -317,16 +317,23 @@ footer .wrapper .docs span a:hover {
   background-color: #f55f44;
   text-transform: uppercase;
   text-align: center;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 61.9375em) {
+  .top-banner .wrapper .banner-text {
+    padding: 1rem;
+  }
 }
 .top-banner .wrapper .banner-text .content {
-  margin: 20px auto 0;
-  padding-bottom: 20px;
+  padding: 20px 5px;
   color: #111;
 }
-@media (min-width: 62em) {
+@media (min-width: 40em) {
   .top-banner .wrapper .banner-text .content {
-    margin-right: 3rem;
+    padding: 40px 30px;
   }
 }
 .top-banner .wrapper .banner-text h1 {
@@ -343,9 +350,10 @@ footer .wrapper .docs span a:hover {
   color: #111;
 }
 .top-banner .wrapper .banner-text .covid {
-  margin-top: 10px;
+  margin-top: 15px;
   font-size: 20px;
   font-weight: 100;
+  opacity: 0.8;
 }
 .top-banner .wrapper .banner-text .help {
   margin: 35px auto;

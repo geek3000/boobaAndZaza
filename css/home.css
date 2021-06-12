@@ -103,7 +103,7 @@ blockquote {
   }
 }
 
-@media (max-width: 61.9375em) {
+@media (max-width: 63.9375em) {
   .hide-for-mobile {
     display: none;
   }
@@ -144,7 +144,7 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
   opacity: 0.6;
 }
 
-@media (max-width: 61.9375em) {
+@media (max-width: 63.9375em) {
   .menu__toggle {
     position: relative;
     display: block;

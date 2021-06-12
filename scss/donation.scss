@@ -32,15 +32,21 @@
       background-color: $error-color;
       text-transform: uppercase;
       text-align: center;
-      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @include breakpoint-down(medium) {
+        padding: 1rem;
+      }
 
       .content {
-        margin: 20px auto 0;
-        padding-bottom: 20px;
+        padding: 20px 5px;
         color: #111;
 
-        @include breakpoint-up(medium2) {
-          margin-right: 3rem;
+        @include breakpoint-up(medium) {
+          padding: 40px 30px;
         }
       }
 
@@ -59,9 +65,10 @@
       }
 
       .covid {
-        margin-top: 10px;
+        margin-top: 15px;
         font-size: 20px;
         font-weight: 100;
+        opacity: 0.8;
       }
 
       .help {
@@ -242,7 +249,7 @@
     }
   }
 
-  .other-amount{
+  .other-amount {
     max-width: 700px;
   }
 }
