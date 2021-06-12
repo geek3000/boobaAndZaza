@@ -141,7 +141,7 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link.donate {
   color: #f55f44;
 }
 header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 @media (max-width: 61.9375em) {
@@ -224,18 +224,22 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
 .contact-banner {
   padding: 30px 0;
   margin-top: 70px;
-  background-color: #f55f44;
+  background-color: #ffa45c;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 .contact-banner .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
 }
 .contact-banner .wrapper .contact-infos {
   flex: 1;
 }
 .contact-banner .wrapper .contact-infos .name {
   font-weight: 500;
+  color: #333;
 }
 .contact-banner .wrapper .contact-infos div:not(.name) {
   color: #fff;
@@ -247,7 +251,7 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
 .contact-banner .wrapper .partners-logos {
   flex: 1;
   display: flex;
-  gap: 0.1rem;
+  gap: 0.3rem;
 }
 @media (max-width: 39.9375em) {
   .contact-banner .wrapper .partners-logos {
@@ -272,6 +276,7 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
 footer {
   font-size: 0.8rem;
   padding: 10px 0 5px;
+  color: #333;
 }
 footer .wrapper {
   display: flex;
@@ -288,6 +293,11 @@ footer .wrapper .docs span a:hover {
 
 header {
   min-height: 50vh;
+}
+@media (min-width: 40em) {
+  header {
+    min-height: 70vh;
+  }
 }
 @media (min-width: 62em) {
   header {
@@ -396,7 +406,7 @@ section#donation-provide .donation-input .di-img img {
 }
 section#donation-provide .donation-input .di-text {
   color: #fff;
-  padding: 20px 15px;
+  padding: 25px 15px;
 }
 section#donation-provide .donation-input .di-text .text-title {
   text-align: center;
@@ -447,6 +457,86 @@ section#donation-provide .donation-input.impact .di-text {
 }
 .orange a {
   text-decoration: underline;
+}
+
+.bottom-banner {
+  margin-top: 40px;
+}
+.bottom-banner .wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 40em) {
+  .bottom-banner .wrapper {
+    flex-direction: row;
+  }
+}
+.bottom-banner .wrapper .banner-img {
+  flex: 1 0 28%;
+}
+.bottom-banner .wrapper .banner-img img {
+  height: 100%;
+  max-height: 600px;
+  object-fit: cover;
+}
+@media (min-width: 40em) {
+  .bottom-banner .wrapper .banner-img img {
+    object-fit: contain;
+  }
+}
+.bottom-banner .wrapper .banner-text {
+  flex: 1 0 72%;
+  background-color: #ffa45c;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-banner .wrapper .banner-text .content {
+  margin: 20px auto 0;
+  padding-bottom: 20px;
+  color: #fff;
+}
+.bottom-banner .wrapper .banner-text h1 {
+  text-transform: capitalize;
+  font-size: 42px;
+  line-height: 50px;
+  color: #fff;
+  margin-top: 15px;
+}
+@media (max-width: 39.9375em) {
+  .bottom-banner .wrapper .banner-text h1 {
+    word-break: break-all;
+  }
+}
+.bottom-banner .wrapper .banner-text h1 .black {
+  color: #111;
+}
+.bottom-banner .wrapper .banner-text .covid {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 100;
+}
+.bottom-banner .wrapper .banner-text .help {
+  text-transform: initial;
+  margin: 40px auto;
+}
+.bottom-banner .wrapper .banner-text .help p {
+  font-size: 30px;
+  line-height: 2.475rem;
+  padding: 0 0 1.875rem;
+  max-width: 30ch;
+  margin: auto;
+  font-weight: 100;
+  opacity: 0.85;
+}
+.bottom-banner .wrapper .banner-text .white {
+  text-transform: initial;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=home.css.map */
