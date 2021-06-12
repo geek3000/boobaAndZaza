@@ -259,7 +259,7 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
   }
 }
 .contact-banner .wrapper .partners-logos .partner-logo {
-  flex: 1 0 200px;
+  flex: 1;
   max-width: 100%;
   max-height: 150px;
 }
@@ -332,20 +332,6 @@ section#who-we-are .text-summary-wrapper .text-main {
   padding-top: 2rem;
   flex: 2;
 }
-section#who-we-are .text-summary-wrapper .text-main blockquote {
-  margin-bottom: 1.875rem;
-  color: #636c98;
-}
-section#who-we-are .text-summary-wrapper .text-main blockquote p::before {
-  content: open-quote;
-  font-size: 3rem;
-  color: #f55f44;
-}
-section#who-we-are .text-summary-wrapper .text-main blockquote p::after {
-  content: close-quote;
-  font-size: 3rem;
-  color: #f55f44;
-}
 @media (min-width: 62em) {
   section#who-we-are .text-summary-wrapper .text-main {
     margin-right: 2rem;
@@ -381,6 +367,23 @@ section#who-we-are .text-summary-wrapper .text-aside .text-aside-text {
   padding: 1.5rem;
   background-color: #f2f2f2;
   margin-bottom: 75px;
+}
+section#who-we-are .summary-next-wrapper {
+  margin-bottom: 50px;
+}
+section#who-we-are .summary-next-wrapper blockquote {
+  margin-bottom: 1.875rem;
+  color: #636c98;
+}
+section#who-we-are .summary-next-wrapper blockquote p::before {
+  content: open-quote;
+  font-size: 3rem;
+  color: #f55f44;
+}
+section#who-we-are .summary-next-wrapper blockquote p::after {
+  content: close-quote;
+  font-size: 3rem;
+  color: #f55f44;
 }
 section#current-footprint .wrapper .table {
   max-width: 100%;

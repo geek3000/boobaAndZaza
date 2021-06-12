@@ -259,7 +259,7 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
   }
 }
 .contact-banner .wrapper .partners-logos .partner-logo {
-  flex: 1 0 200px;
+  flex: 1;
   max-width: 100%;
   max-height: 150px;
 }

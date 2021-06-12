@@ -259,7 +259,7 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
   }
 }
 .contact-banner .wrapper .partners-logos .partner-logo {
-  flex: 1 0 200px;
+  flex: 1;
   max-width: 100%;
   max-height: 150px;
 }
@@ -292,7 +292,7 @@ footer .wrapper .docs span a:hover {
 }
 
 header {
-  min-height: 50vh;
+  min-height: 40vh;
 }
 @media (min-width: 40em) {
   header {
@@ -302,6 +302,11 @@ header {
 @media (min-width: 62em) {
   header {
     min-height: 620px;
+  }
+}
+@media (max-width: landscape) {
+  header {
+    min-height: 90vh;
   }
 }
 header .hero-banner {
@@ -472,6 +477,18 @@ section#donation-provide .donation-input.impact .di-text {
     flex-direction: row;
   }
 }
+@media (max-width: landscape) {
+  .bottom-banner .wrapper .banner-img {
+    flex: 1;
+  }
+  .bottom-banner .wrapper .banner-img img {
+    max-height: initial;
+    object-fit: cover;
+  }
+  .bottom-banner .wrapper .banner-text {
+    flex: 1;
+  }
+}
 .bottom-banner .wrapper .banner-img {
   flex: 1 0 28%;
 }
@@ -489,6 +506,7 @@ section#donation-provide .donation-input.impact .di-text {
   flex: 1 0 72%;
   background-color: #ffa45c;
   text-align: center;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -524,13 +542,18 @@ section#donation-provide .donation-input.impact .di-text {
   margin: 40px auto;
 }
 .bottom-banner .wrapper .banner-text .help p {
-  font-size: 30px;
+  font-size: 24px;
   line-height: 2.475rem;
   padding: 0 0 1.875rem;
   max-width: 30ch;
   margin: auto;
   font-weight: 100;
   opacity: 0.85;
+}
+@media (min-width: 40em) {
+  .bottom-banner .wrapper .banner-text .help p {
+    font-size: 30px;
+  }
 }
 .bottom-banner .wrapper .banner-text .white {
   text-transform: initial;
