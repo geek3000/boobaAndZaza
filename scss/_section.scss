@@ -1,0 +1,29 @@
+section {
+  .section-title {
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+    line-height: 2.125rem;
+    margin-bottom: 1.3rem;
+    margin-top: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $secondary-color;
+    text-align: center;
+    
+    @include breakpoint-up(medium) {
+      letter-spacing: 0;
+      text-align: left;
+      font-size: 1.75rem;
+    }
+  }
+
+  p {
+    font-size: 1.0625rem;
+    line-height: 1.875rem;
+    padding: 0 0 1.875rem;
+    text-align: justify;
+
+    @include breakpoint-up(medium2) {
+    }
+  }
+}

@@ -3,6 +3,7 @@
 @import 'globals';
 @import 'header';
 @import 'mobile-menu';
+@import 'section';
 @import 'contact-banner';
 @import 'footer';
 
@@ -20,7 +21,6 @@ header {
   @include breakpoint-up(medium2) {
     min-height: 620px;
   }
-
 
   .hero-banner {
     position: absolute;
@@ -47,32 +47,6 @@ header {
 }
 
 section {
-  text-align: center;
-
-  @include breakpoint-up(medium) {
-    text-align: left;
-  }
-
-  .section-title {
-    font-size: 1.75rem;
-    line-height: 2.125rem;
-    margin-bottom: 1.3rem;
-    margin-top: 1.7rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $error-color;
-  }
-
-  p {
-    font-size: 1.0625rem;
-    line-height: 1.875rem;
-    padding: 0 0 1.875rem;
-
-    @include breakpoint-up(medium2) {
-      max-width: 90ch;
-    }
-  }
-
   &#first-summary {
     margin-top: 70px;
 
@@ -89,7 +63,6 @@ section {
     .specifications {
       display: flex;
       justify-content: space-between;
-      max-width: 30ch;
       margin: 40px auto;
       padding: 10px 30px;
       border-radius: 5px;
@@ -122,7 +95,9 @@ section {
     .donation-input {
       display: flex;
       flex-direction: column;
-      gap: 5px;
+      //gap: 5px;
+      border: 2px solid #eee;
+      border-radius: 5px;
 
       .di-img {
         height: 200px;
@@ -136,7 +111,7 @@ section {
       }
 
       .di-text {
-        color: #fff;
+        color: $primary-color;
         padding: 25px 15px;
 
         .text-title {
@@ -153,7 +128,7 @@ section {
             line-height: 26px;
 
             li {
-              list-style-type: circle;
+              list-style-type: initial;
               margin-left: 30px;
             }
           }
@@ -166,35 +141,39 @@ section {
 
       &.skills {
         .di-img {
-          border: 2px solid #ff5050;
+          border: 1px solid #eee;
 
           img {
-            width: 47%;
+            width: 43%;
           }
         }
 
         .di-text {
-          background-color: #ff5050;
+          background-color: #eee;
         }
       }
 
       &.toolbox {
         .di-img {
-          border: 2px solid #a8d08c;
+          border: 1px solid #eee;
         }
 
         .di-text {
-          background-color: #a8d08c;
+          background-color: #eee;
         }
       }
 
       &.impact {
         .di-img {
-          border: 2px solid #00b0f0;
+          border: 1px solid #eee;
+
+          img {
+            width: 25%;
+          }
         }
 
         .di-text {
-          background-color: #00b0f0;
+          background-color: #eee;
         }
       }
     }
@@ -202,7 +181,7 @@ section {
 }
 
 .orange {
-  color: $error-color;
+  color: $secondary-color;
   font-weight: 500;
 
   a {
@@ -274,7 +253,7 @@ section {
         margin-top: 15px;
 
         @include breakpoint-down(small) {
-          word-break: break-all;
+          //word-break: break-all;
         }
 
         .black {
@@ -293,7 +272,7 @@ section {
         margin: 40px auto;
 
         p {
-          font-size: 24px;
+          font-size: 22px;
           line-height: 2.475rem;
           padding: 0 0 1.875rem;
           max-width: 35ch;

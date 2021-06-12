@@ -138,7 +138,7 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link {
   text-transform: uppercase;
 }
 header .nav-wrapper .nav__items .link__list .nav__item .nav__link.donate {
-  color: #f55f44;
+  color: #ffa45c;
 }
 header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
   opacity: 0.6;
@@ -222,10 +222,8 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
 }
 
 .contact-banner {
-  padding: 30px 0;
+  padding-top: 30px;
   margin-top: 70px;
-  background-color: #ffa45c;
-  border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 }
 .contact-banner .wrapper {
@@ -242,7 +240,6 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
   color: #333;
 }
 .contact-banner .wrapper .contact-infos div:not(.name) {
-  color: #fff;
   font-size: 0.8rem;
 }
 .contact-banner .wrapper .contact-infos a:hover {
@@ -259,10 +256,17 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
   }
 }
 .contact-banner .wrapper .partners-logos .partner-logo {
+  position: relative;
   flex: 1;
   max-width: 100%;
   max-height: 150px;
   min-width: 150px;
+}
+@media (min-width: 40em) {
+  .contact-banner .wrapper .partners-logos .partner-logo:nth-child(2) img {
+    position: absolute;
+    top: 12px;
+  }
 }
 @media (min-width: 40em) {
   .contact-banner .wrapper .partners-logos .partner-logo {
@@ -314,7 +318,7 @@ footer .wrapper .docs span a:hover {
 }
 .top-banner .wrapper .banner-text {
   flex: 1;
-  background-color: #f55f44;
+  background-color: #ffa45c;
   text-transform: uppercase;
   text-align: center;
   display: flex;
@@ -497,7 +501,7 @@ footer .wrapper .docs span a:hover {
 }
 
 .yellow {
-  color: #f55f44;
+  color: #ffa45c;
   margin-top: 20px;
 }
 

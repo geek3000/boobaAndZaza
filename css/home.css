@@ -138,7 +138,7 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link {
   text-transform: uppercase;
 }
 header .nav-wrapper .nav__items .link__list .nav__item .nav__link.donate {
-  color: #f55f44;
+  color: #ffa45c;
 }
 header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
   opacity: 0.6;
@@ -221,11 +221,33 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
   opacity: 0.5;
 }
 
+section .section-title {
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+  line-height: 2.125rem;
+  margin-bottom: 1.3rem;
+  margin-top: 1.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffa45c;
+  text-align: center;
+}
+@media (min-width: 40em) {
+  section .section-title {
+    letter-spacing: 0;
+    text-align: left;
+    font-size: 1.75rem;
+  }
+}
+section p {
+  font-size: 1.0625rem;
+  line-height: 1.875rem;
+  padding: 0 0 1.875rem;
+  text-align: justify;
+}
 .contact-banner {
-  padding: 30px 0;
+  padding-top: 30px;
   margin-top: 70px;
-  background-color: #ffa45c;
-  border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 }
 .contact-banner .wrapper {
@@ -242,7 +264,6 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
   color: #333;
 }
 .contact-banner .wrapper .contact-infos div:not(.name) {
-  color: #fff;
   font-size: 0.8rem;
 }
 .contact-banner .wrapper .contact-infos a:hover {
@@ -259,10 +280,17 @@ header .nav-wrapper .nav__items .link__list .nav__item .nav__link:hover {
   }
 }
 .contact-banner .wrapper .partners-logos .partner-logo {
+  position: relative;
   flex: 1;
   max-width: 100%;
   max-height: 150px;
   min-width: 150px;
+}
+@media (min-width: 40em) {
+  .contact-banner .wrapper .partners-logos .partner-logo:nth-child(2) img {
+    position: absolute;
+    top: 12px;
+  }
 }
 @media (min-width: 40em) {
   .contact-banner .wrapper .partners-logos .partner-logo {
@@ -333,33 +361,6 @@ header .hero-banner img {
   }
 }
 
-section {
-  text-align: center;
-}
-@media (min-width: 40em) {
-  section {
-    text-align: left;
-  }
-}
-section .section-title {
-  font-size: 1.75rem;
-  line-height: 2.125rem;
-  margin-bottom: 1.3rem;
-  margin-top: 1.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #f55f44;
-}
-section p {
-  font-size: 1.0625rem;
-  line-height: 1.875rem;
-  padding: 0 0 1.875rem;
-}
-@media (min-width: 62em) {
-  section p {
-    max-width: 90ch;
-  }
-}
 section#first-summary {
   margin-top: 70px;
 }
@@ -376,7 +377,6 @@ section#first-summary .primary-title {
 section#first-summary .specifications {
   display: flex;
   justify-content: space-between;
-  max-width: 30ch;
   margin: 40px auto;
   padding: 10px 30px;
   border-radius: 5px;
@@ -399,7 +399,8 @@ section#donation-provide .wrapper {
 section#donation-provide .donation-input {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  border: 2px solid #eee;
+  border-radius: 5px;
 }
 section#donation-provide .donation-input .di-img {
   height: 200px;
@@ -411,7 +412,7 @@ section#donation-provide .donation-input .di-img img {
   object-fit: contain;
 }
 section#donation-provide .donation-input .di-text {
-  color: #fff;
+  color: #052b5d;
   padding: 25px 15px;
 }
 section#donation-provide .donation-input .di-text .text-title {
@@ -427,7 +428,7 @@ section#donation-provide .donation-input .di-text .text-body ul {
 }
 section#donation-provide .donation-input .di-text .text-body p li,
 section#donation-provide .donation-input .di-text .text-body ul li {
-  list-style-type: circle;
+  list-style-type: initial;
   margin-left: 30px;
 }
 @media (max-width: 39.9375em) {
@@ -436,29 +437,32 @@ section#donation-provide .donation-input .di-text .text-body ul li {
   }
 }
 section#donation-provide .donation-input.skills .di-img {
-  border: 2px solid #ff5050;
+  border: 1px solid #eee;
 }
 section#donation-provide .donation-input.skills .di-img img {
-  width: 47%;
+  width: 43%;
 }
 section#donation-provide .donation-input.skills .di-text {
-  background-color: #ff5050;
+  background-color: #eee;
 }
 section#donation-provide .donation-input.toolbox .di-img {
-  border: 2px solid #a8d08c;
+  border: 1px solid #eee;
 }
 section#donation-provide .donation-input.toolbox .di-text {
-  background-color: #a8d08c;
+  background-color: #eee;
 }
 section#donation-provide .donation-input.impact .di-img {
-  border: 2px solid #00b0f0;
+  border: 1px solid #eee;
+}
+section#donation-provide .donation-input.impact .di-img img {
+  width: 25%;
 }
 section#donation-provide .donation-input.impact .di-text {
-  background-color: #00b0f0;
+  background-color: #eee;
 }
 
 .orange {
-  color: #f55f44;
+  color: #ffa45c;
   font-weight: 500;
 }
 .orange a {
@@ -520,11 +524,6 @@ section#donation-provide .donation-input.impact .di-text {
   color: #fff;
   margin-top: 15px;
 }
-@media (max-width: 39.9375em) {
-  .bottom-banner .wrapper .banner-text h1 {
-    word-break: break-all;
-  }
-}
 .bottom-banner .wrapper .banner-text h1 .black {
   color: #111;
 }
@@ -538,7 +537,7 @@ section#donation-provide .donation-input.impact .di-text {
   margin: 40px auto;
 }
 .bottom-banner .wrapper .banner-text .help p {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 2.475rem;
   padding: 0 0 1.875rem;
   max-width: 35ch;
