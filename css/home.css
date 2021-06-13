@@ -410,27 +410,116 @@ section#first-summary .specifications span {
 section#twelve-themes .wrapper {
   margin-top: 40px;
 }
+section#donation-provide {
+  /*Initial styles*/
+  /****END********/
+  /*.donation-input {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #eee;
+    border-radius: 5px;
+
+    .di-img {
+      height: 200px;
+
+      img {
+        width: 30%;
+        margin: auto;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .di-text {
+      color: $primary-color;
+      padding: 25px 15px;
+
+      .text-title {
+        text-align: center;
+        font-size: 18px;
+        margin: 20px auto;
+        text-transform: uppercase;
+      }
+
+      .text-body {
+        p,
+        ul {
+          font-size: 15px;
+          line-height: 26px;
+
+          li {
+            list-style-type: initial;
+            margin-left: 30px;
+          }
+        }
+
+        @include breakpoint-down(small) {
+          text-align: left;
+        }
+      }
+    }
+
+    &.skills {
+      .di-img {
+        border: 1px solid #eee;
+
+        img {
+          width: 43%;
+        }
+      }
+
+      .di-text {
+        background-color: #eee;
+      }
+    }
+
+    &.toolbox {
+      .di-img {
+        border: 1px solid #eee;
+      }
+
+      .di-text {
+        background-color: #eee;
+      }
+    }
+
+    &.impact {
+      .di-img {
+        border: 1px solid #eee;
+
+        img {
+          width: 25%;
+        }
+      }
+
+      .di-text {
+        background-color: #eee;
+      }
+    }
+  }*/
+}
 section#donation-provide .wrapper {
   margin-top: 40px;
 }
 section#donation-provide .donation-input {
+  text-align: justify;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.02);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  border: 2px solid #eee;
-  border-radius: 5px;
+  align-items: center;
+  padding: 2em;
 }
-section#donation-provide .donation-input .di-img {
-  height: 200px;
+@media (min-width: 750px) {
+  section#donation-provide .donation-input {
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.05);
+  }
 }
 section#donation-provide .donation-input .di-img img {
-  width: 30%;
-  margin: auto;
-  height: 100%;
-  object-fit: contain;
-}
-section#donation-provide .donation-input .di-text {
-  color: #052b5d;
-  padding: 25px 15px;
+  width: 80px;
+  height: 80px;
 }
 section#donation-provide .donation-input .di-text .text-title {
   text-align: center;
@@ -440,42 +529,16 @@ section#donation-provide .donation-input .di-text .text-title {
 }
 section#donation-provide .donation-input .di-text .text-body p,
 section#donation-provide .donation-input .di-text .text-body ul {
-  font-size: 15px;
-  line-height: 26px;
+  list-style-type: initial;
+  list-style-position: inside;
 }
 section#donation-provide .donation-input .di-text .text-body p li,
 section#donation-provide .donation-input .di-text .text-body ul li {
-  list-style-type: initial;
-  margin-left: 30px;
-}
-@media (max-width: 39.9375em) {
-  section#donation-provide .donation-input .di-text .text-body {
-    text-align: left;
-  }
-}
-section#donation-provide .donation-input.skills .di-img {
-  border: 1px solid #eee;
+  font-size: 0.9rem;
+  margin-left: 35px;
 }
 section#donation-provide .donation-input.skills .di-img img {
-  width: 43%;
-}
-section#donation-provide .donation-input.skills .di-text {
-  background-color: #eee;
-}
-section#donation-provide .donation-input.toolbox .di-img {
-  border: 1px solid #eee;
-}
-section#donation-provide .donation-input.toolbox .di-text {
-  background-color: #eee;
-}
-section#donation-provide .donation-input.impact .di-img {
-  border: 1px solid #eee;
-}
-section#donation-provide .donation-input.impact .di-img img {
-  width: 25%;
-}
-section#donation-provide .donation-input.impact .di-text {
-  background-color: #eee;
+  width: 150px;
 }
 
 .orange {
@@ -541,6 +604,11 @@ section#donation-provide .donation-input.impact .di-text {
   color: #fff;
   margin-top: 15px;
 }
+@media (max-width: 39.9375em) {
+  .bottom-banner .wrapper .banner-text h1 {
+    font-size: 38px;
+  }
+}
 .bottom-banner .wrapper .banner-text h1 .black {
   color: #111;
 }
@@ -554,17 +622,21 @@ section#donation-provide .donation-input.impact .di-text {
   margin: 40px auto;
 }
 .bottom-banner .wrapper .banner-text .help p {
-  font-size: 22px;
-  line-height: 2.475rem;
+  font-size: 20px;
+  line-height: 33px;
   padding: 0 0 1.875rem;
   max-width: 35ch;
   margin: auto;
   font-weight: 100;
   opacity: 0.8;
 }
-@media (min-width: 40em) {
+.bottom-banner .wrapper .banner-text .help p:last-child {
+  padding-bottom: 0;
+}
+@media (min-width: 62em) {
   .bottom-banner .wrapper .banner-text .help p {
     font-size: 30px;
+    line-height: 46px;
   }
 }
 .bottom-banner .wrapper .banner-text .white {

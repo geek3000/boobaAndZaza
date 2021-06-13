@@ -32,6 +32,10 @@ header {
     min-height: 620px;
   }
 
+  @media (min-width: 1600px) {
+    //min-height: 800px;
+  }
+
   .hero-banner {
     position: absolute;
 
@@ -101,7 +105,62 @@ section {
       }
     }
 
+    /*Initial styles*/
     .donation-input {
+      text-align: justify;
+      margin: 10px;
+      border-radius: 20px;
+      box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.02);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2em;
+
+      @media (min-width: 750px) {
+        box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.05);
+      }
+
+      .di-img {
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+
+      .di-text {
+        .text-title {
+          text-align: center;
+          font-size: 18px;
+          margin: 20px auto;
+          text-transform: uppercase;
+        }
+
+        .text-body {
+          p,
+          ul {
+            list-style-type: initial;
+            list-style-position: inside;
+
+            li {
+              font-size: $regular-size;
+              margin-left: 35px;
+            }
+          }
+        }
+      }
+
+      &.skills {
+        .di-img {
+          img {
+            width: 150px;
+          }
+        }
+      }
+    }
+    /****END********/
+
+    /*.donation-input {
       display: flex;
       flex-direction: column;
       border: 2px solid #eee;
@@ -184,7 +243,7 @@ section {
           background-color: #eee;
         }
       }
-    }
+    }*/
   }
 }
 
@@ -261,7 +320,7 @@ section {
         margin-top: 15px;
 
         @include breakpoint-down(small) {
-          //word-break: break-all;
+          font-size: 38px;
         }
 
         .black {
@@ -280,16 +339,21 @@ section {
         margin: 40px auto;
 
         p {
-          font-size: 22px;
-          line-height: 2.475rem;
+          font-size: 20px;
+          line-height: 33px;
           padding: 0 0 1.875rem;
           max-width: 35ch;
           margin: auto;
           font-weight: 100;
           opacity: 0.8;
 
-          @include breakpoint-up(medium) {
+          &:last-child {
+            padding-bottom: 0;
+          }
+
+          @include breakpoint-up(medium2) {
             font-size: 30px;
+            line-height: 46px;
           }
         }
       }
