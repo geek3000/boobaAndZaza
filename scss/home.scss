@@ -36,6 +36,12 @@ header {
     //min-height: 800px;
   }
 
+  .menu__toggle {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+  }
+
   .hero-banner {
     position: absolute;
 
@@ -101,7 +107,10 @@ section {
     .wrapper {
       margin-top: 40px;
 
-      .owl-elements {
+      .owl-carousel {
+        .owl-stage {
+          //display: flex;
+        }
       }
     }
 
@@ -132,7 +141,7 @@ section {
         .text-title {
           text-align: center;
           font-size: 18px;
-          margin: 20px auto;
+          margin: 30px auto;
           text-transform: uppercase;
         }
 
@@ -369,17 +378,6 @@ section {
         font-size: 20px;
         font-weight: 500;
 
-        @supports not (gap: 20px) {
-          .donate-btn {
-            margin-top: 20px;
-
-            @include breakpoint-up(medium) {
-              margin-top: 0;
-              margin-left: 20px;
-            }
-          }
-        }
-
         @include breakpoint-up(medium) {
           flex-direction: row;
         }
@@ -390,6 +388,15 @@ section {
           background-color: $primary-color;
           padding: 20px;
           border-radius: 10px;
+
+          @supports not (gap: 20px) {
+            margin-top: 20px;
+
+            @include breakpoint-up(medium) {
+              margin-top: 0;
+              margin-left: 20px;
+            }
+          }
 
           &:hover {
             background-color: $primary-light;

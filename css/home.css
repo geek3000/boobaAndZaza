@@ -356,6 +356,11 @@ footer .wrapper .docs span a:hover {
     min-height: 620px;
   }
 }
+header .menu__toggle {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+}
 header .hero-banner {
   position: absolute;
   top: 0;
@@ -524,7 +529,7 @@ section#donation-provide .donation-input .di-img img {
 section#donation-provide .donation-input .di-text .text-title {
   text-align: center;
   font-size: 18px;
-  margin: 20px auto;
+  margin: 30px auto;
   text-transform: uppercase;
 }
 section#donation-provide .donation-input .di-text .text-body p,
@@ -650,17 +655,6 @@ section#donation-provide .donation-input.skills .di-img img {
   font-size: 20px;
   font-weight: 500;
 }
-@supports not (gap: 20px) {
-  .bottom-banner .wrapper .banner-text .white .donate-btn {
-    margin-top: 20px;
-  }
-  @media (min-width: 40em) {
-    .bottom-banner .wrapper .banner-text .white .donate-btn {
-      margin-top: 0;
-      margin-left: 20px;
-    }
-  }
-}
 @media (min-width: 40em) {
   .bottom-banner .wrapper .banner-text .white {
     flex-direction: row;
@@ -672,6 +666,17 @@ section#donation-provide .donation-input.skills .di-img img {
   background-color: #052b5d;
   padding: 20px;
   border-radius: 10px;
+}
+@supports not (gap: 20px) {
+  .bottom-banner .wrapper .banner-text .white .donate-btn {
+    margin-top: 20px;
+  }
+  @media (min-width: 40em) {
+    .bottom-banner .wrapper .banner-text .white .donate-btn {
+      margin-top: 0;
+      margin-left: 20px;
+    }
+  }
 }
 .bottom-banner .wrapper .banner-text .white .donate-btn:hover {
   background-color: #636c98;
