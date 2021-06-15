@@ -666,6 +666,7 @@ section#donation-provide .donation-input.skills .di-img img {
   background-color: #052b5d;
   padding: 20px;
   border-radius: 10px;
+  margin-top: 20px;
 }
 @supports not (gap: 20px) {
   .bottom-banner .wrapper .banner-text .white .donate-btn {
