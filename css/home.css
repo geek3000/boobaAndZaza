@@ -427,6 +427,9 @@ section#first-summary .specifications {
 section#first-summary .specifications span {
   font-weight: 600;
 }
+section#first-summary .specifications span i {
+  color: #ffa45c;
+}
 section#twelve-themes .wrapper {
   margin-top: 40px;
 }
