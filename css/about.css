@@ -342,6 +342,19 @@ section#who-we-are .text-summary-wrapper .text-main {
   padding-top: 2rem;
   flex: 2;
 }
+section#who-we-are .text-summary-wrapper .text-main blockquote {
+  color: #636c98;
+}
+section#who-we-are .text-summary-wrapper .text-main blockquote p::before {
+  content: open-quote;
+  font-size: 3rem;
+  color: #f55f44;
+}
+section#who-we-are .text-summary-wrapper .text-main blockquote p::after {
+  content: close-quote;
+  font-size: 3rem;
+  color: #f55f44;
+}
 @media (min-width: 62em) {
   section#who-we-are .text-summary-wrapper .text-main {
     margin-right: 2rem;

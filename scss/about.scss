@@ -26,6 +26,22 @@ section {
         padding-top: 2rem;
         flex: 2;
 
+        blockquote {
+          color: $primary-light;
+
+          p::before {
+            content: open-quote;
+            font-size: 3rem;
+            color: $error-color;
+          }
+
+          p::after {
+            content: close-quote;
+            font-size: 3rem;
+            color: $error-color;
+          }
+        }
+
         @include breakpoint-up(medium2) {
           margin-right: 2rem;
         }
