@@ -80,6 +80,7 @@ section {
 
     .specifications {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       margin: 40px auto;
       padding: 10px 30px;
@@ -326,13 +327,14 @@ section {
       h1 {
         text-transform: capitalize;
         font-size: 38px;
-        line-height: 50px;
+        line-height: 58px;
         color: #fff;
         margin-top: 15px;
         word-break: break-all;
         letter-spacing: -2px;
 
         @include breakpoint-up(medium2) {
+          line-height: 63px;
           font-size: 60px;
         }
 
@@ -352,11 +354,11 @@ section {
           margin: auto;
           font-weight: 100;
           opacity: 0.8;
-          
+
           &:last-child {
             padding-bottom: 0;
           }
-          
+
           @include breakpoint-up(medium2) {
             max-width: 78%;
             font-size: 25px;

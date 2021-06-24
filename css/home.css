@@ -412,6 +412,7 @@ section#first-summary .primary-title {
 }
 section#first-summary .specifications {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 40px auto;
   padding: 10px 30px;
@@ -627,7 +628,7 @@ section#donation-provide .donation-input.skills .di-img img {
 .bottom-banner .wrapper .banner-text h1 {
   text-transform: capitalize;
   font-size: 38px;
-  line-height: 50px;
+  line-height: 58px;
   color: #fff;
   margin-top: 15px;
   word-break: break-all;
@@ -635,6 +636,7 @@ section#donation-provide .donation-input.skills .di-img img {
 }
 @media (min-width: 62em) {
   .bottom-banner .wrapper .banner-text h1 {
+    line-height: 63px;
     font-size: 60px;
   }
 }
