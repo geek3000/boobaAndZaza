@@ -11,6 +11,10 @@ section {
   &#who-we-are {
     padding-top: 6.75rem;
 
+    .section-title {
+      text-align: left;
+    }
+
     .text-summary-wrapper {
       @include breakpoint-up(medium2) {
         display: flex;
