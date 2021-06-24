@@ -312,14 +312,13 @@ footer {
 }
 footer .wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-end;
   padding: 10px 0 5px;
   margin-top: 10px;
   border-top: 1px solid #eee;
 }
 footer .wrapper .docs span {
-  display: block;
   line-height: 1.3;
 }
 footer .wrapper .docs span a:hover {
@@ -505,7 +504,14 @@ section#donation-provide {
 section#donation-provide .wrapper {
   margin-top: 40px;
 }
+@media (min-width: 62em) {
+  section#donation-provide .wrapper.desktop {
+    display: flex;
+    margin-bottom: 80px;
+  }
+}
 section#donation-provide .donation-input {
+  flex: 1;
   text-align: justify;
   margin: 10px;
   border-radius: 20px;
@@ -535,6 +541,7 @@ section#donation-provide .donation-input .di-text .text-body p,
 section#donation-provide .donation-input .di-text .text-body ul {
   list-style-type: initial;
   list-style-position: inside;
+  font-size: 0.9rem;
 }
 section#donation-provide .donation-input .di-text .text-body p li,
 section#donation-provide .donation-input .di-text .text-body ul li {
@@ -610,7 +617,7 @@ section#donation-provide .donation-input.skills .di-img img {
   word-break: break-all;
   letter-spacing: -2px;
 }
-@media (min-width: 40em) {
+@media (min-width: 62em) {
   .bottom-banner .wrapper .banner-text h1 {
     font-size: 60px;
   }
@@ -626,7 +633,6 @@ section#donation-provide .donation-input.skills .di-img img {
   font-size: 20px;
   line-height: 33px;
   padding: 0 0 1.875rem;
-  max-width: 80%;
   margin: auto;
   font-weight: 100;
   opacity: 0.8;
@@ -636,6 +642,7 @@ section#donation-provide .donation-input.skills .di-img img {
 }
 @media (min-width: 62em) {
   .bottom-banner .wrapper .banner-text .help p {
+    max-width: 78%;
     font-size: 25px;
     line-height: 46px;
   }

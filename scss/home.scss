@@ -106,15 +106,17 @@ section {
     .wrapper {
       margin-top: 40px;
 
-      .owl-carousel {
-        .owl-stage {
-          //display: flex;
+      &.desktop {
+        @include breakpoint-up(medium2) {
+          display: flex;
+          margin-bottom: 80px;
         }
       }
     }
 
     /*Initial styles*/
     .donation-input {
+      flex: 1;
       text-align: justify;
       margin: 10px;
       border-radius: 20px;
@@ -149,6 +151,7 @@ section {
           ul {
             list-style-type: initial;
             list-style-position: inside;
+            font-size: $regular-size;
 
             li {
               font-size: $regular-size;
@@ -329,7 +332,7 @@ section {
         word-break: break-all;
         letter-spacing: -2px;
 
-        @include breakpoint-up(medium) {
+        @include breakpoint-up(medium2) {
           font-size: 60px;
         }
 
@@ -346,16 +349,16 @@ section {
           font-size: 20px;
           line-height: 33px;
           padding: 0 0 1.875rem;
-          max-width: 80%;
           margin: auto;
           font-weight: 100;
           opacity: 0.8;
-
+          
           &:last-child {
             padding-bottom: 0;
           }
-
+          
           @include breakpoint-up(medium2) {
+            max-width: 78%;
             font-size: 25px;
             line-height: 46px;
           }
