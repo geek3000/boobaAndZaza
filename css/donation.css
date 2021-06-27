@@ -304,7 +304,7 @@ footer .wrapper .socials-icons .icon-img {
 }
 footer .wrapper .socials-icons .icon-img img {
   filter: grayscale(1);
-  opacity: 0.7;
+  opacity: 0.8;
 }
 footer .wrapper .socials-icons .icon-img img:hover {
   filter: none;

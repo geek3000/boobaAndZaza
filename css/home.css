@@ -328,7 +328,7 @@ footer .wrapper .socials-icons .icon-img {
 }
 footer .wrapper .socials-icons .icon-img img {
   filter: grayscale(1);
-  opacity: 0.7;
+  opacity: 0.8;
 }
 footer .wrapper .socials-icons .icon-img img:hover {
   filter: none;
@@ -630,17 +630,29 @@ section#donation-provide .donation-input.skills .di-img img {
 }
 .bottom-banner .wrapper .banner-text h1 {
   text-transform: capitalize;
-  font-size: 38px;
-  line-height: 58px;
+  font-size: 1.9rem;
+  line-height: 2rem;
   color: #fff;
   margin-top: 15px;
   word-break: break-all;
   letter-spacing: -2px;
 }
+@media (min-width: 40em) {
+  .bottom-banner .wrapper .banner-text h1 {
+    line-height: 2rem;
+    font-size: 1.8rem;
+  }
+}
 @media (min-width: 62em) {
   .bottom-banner .wrapper .banner-text h1 {
-    line-height: 63px;
-    font-size: 60px;
+    line-height: 2rem;
+    font-size: 2.6rem;
+  }
+}
+@media (min-width: 64em) {
+  .bottom-banner .wrapper .banner-text h1 {
+    line-height: 3.12rem;
+    font-size: 3.43rem;
   }
 }
 .bottom-banner .wrapper .banner-text h1 .black {
@@ -660,6 +672,13 @@ section#donation-provide .donation-input.skills .di-img img {
 }
 .bottom-banner .wrapper .banner-text .help p:last-child {
   padding-bottom: 0;
+}
+@media (min-width: 40em) {
+  .bottom-banner .wrapper .banner-text .help p {
+    max-width: 98%;
+    line-height: 33px;
+    font-size: 1.2rem;
+  }
 }
 @media (min-width: 62em) {
   .bottom-banner .wrapper .banner-text .help p {
