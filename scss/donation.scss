@@ -152,9 +152,6 @@
 }
 
 .card-payment {
-  //display: flex;
-  //flex-direction: column;
-  //gap: 10px;
   margin-top: 50px;
 
   @include breakpoint-up(medium) {
@@ -202,7 +199,7 @@
 
       img {
         position: absolute;
-        top: 10px;
+        top: 20px;
       }
     }
   }
