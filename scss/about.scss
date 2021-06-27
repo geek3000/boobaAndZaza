@@ -148,10 +148,10 @@ section {
         flex: 1 0 250px;
         margin-right: 1rem;
         max-width: 50%;
-        height: 150px;
+        height: 100px;
 
         @include breakpoint-up(medium) {
-          max-width: 25%;
+          max-width: 16%;
         }
 
         img {
