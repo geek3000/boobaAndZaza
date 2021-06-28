@@ -137,6 +137,11 @@ section {
       overflow-x: scroll;
       flex-wrap: nowrap;
 
+      @include breakpoint-down(small) {
+        justify-content: space-between;
+        gap: 10px;
+      }
+
       &::-webkit-scrollbar {
         display: none;
       }
@@ -145,12 +150,12 @@ section {
       scrollbar-width: none;
 
       .partner-logo {
-        flex: 1 0 250px;
-        margin-right: 1rem;
-        max-width: 50%;
-        height: 100px;
+        flex: 1 0 calc(50% - 5px);
+        max-height: 100px;
 
         @include breakpoint-up(medium) {
+          flex: 1 0 150px;
+          margin-right: 1.5rem;
           max-width: 16%;
         }
 

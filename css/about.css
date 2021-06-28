@@ -451,17 +451,23 @@ section#partnerships .wrapper {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+@media (max-width: 39.9375em) {
+  section#partnerships .wrapper {
+    justify-content: space-between;
+    gap: 10px;
+  }
+}
 section#partnerships .wrapper::-webkit-scrollbar {
   display: none;
 }
 section#partnerships .wrapper .partner-logo {
-  flex: 1 0 250px;
-  margin-right: 1rem;
-  max-width: 50%;
-  height: 100px;
+  flex: 1 0 calc(50% - 5px);
+  max-height: 100px;
 }
 @media (min-width: 40em) {
   section#partnerships .wrapper .partner-logo {
+    flex: 1 0 150px;
+    margin-right: 1.5rem;
     max-width: 16%;
   }
 }
