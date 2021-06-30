@@ -383,6 +383,11 @@ section#who-we-are .text-summary-wrapper .text-aside .text-aside-img {
   position: relative;
   height: 605px;
 }
+@media (max-width: 39.9375em) {
+  section#who-we-are .text-summary-wrapper .text-aside .text-aside-img {
+    margin-top: 2rem;
+  }
+}
 section#who-we-are .text-summary-wrapper .text-aside .text-aside-img img {
   height: 100%;
   object-fit: cover;
@@ -467,7 +472,7 @@ section#partnerships .wrapper .partner-logo {
 @media (min-width: 40em) {
   section#partnerships .wrapper .partner-logo {
     flex: 1 1 50px;
-    margin-right: 2rem;
+    margin-right: 2.5rem;
     max-width: 16%;
   }
 }

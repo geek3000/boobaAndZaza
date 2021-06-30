@@ -54,6 +54,10 @@ section {
           position: relative;
           height: 605px;
 
+          @include breakpoint-down(small) {
+            margin-top: 2rem;
+          }
+
           img {
             height: 100%;
             object-fit: cover;
@@ -155,7 +159,7 @@ section {
 
         @include breakpoint-up(medium) {
           flex: 1 1 50px;
-          margin-right: 2rem;
+          margin-right: 2.5rem;
           max-width: 16%;
         }
 
