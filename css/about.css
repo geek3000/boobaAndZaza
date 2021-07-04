@@ -447,33 +447,18 @@ section#current-footprint .wrapper .table td td:nth-child(odd) {
   font-weight: 600;
 }
 section#partnerships .wrapper {
-  padding: 20px 0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  overflow-x: scroll;
-  flex-wrap: nowrap;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  padding-top: 20px;
 }
-@media (max-width: 39.9375em) {
-  section#partnerships .wrapper {
-    justify-content: space-between;
-    gap: 10px;
-  }
-}
-section#partnerships .wrapper::-webkit-scrollbar {
-  display: none;
+section#partnerships .wrapper .owl-three {
+  width: 90%;
+  margin: auto;
 }
 section#partnerships .wrapper .partner-logo {
-  flex: 1 0 calc(50% - 5px);
-  height: 100px;
+  height: 80px;
 }
 @media (min-width: 40em) {
   section#partnerships .wrapper .partner-logo {
-    flex: 1 1 50px;
-    margin-right: 2.5rem;
-    max-width: 16%;
+    max-width: 70%;
   }
 }
 section#partnerships .wrapper .partner-logo img {

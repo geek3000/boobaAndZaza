@@ -41,4 +41,29 @@ $(document).ready(function () {
       },
     },
   });
+
+  $('.owl-three').owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 15000,
+    autoplayHoverPause: true,
+    margin: 5,
+    smartSpeed: 500,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      750: {
+        items: 3,
+      },
+      1150: {
+        dots: false,
+        items: 4,
+      },
+      1350: {
+        dots: false,
+        items: 5,
+      },
+    },
+  });
 });

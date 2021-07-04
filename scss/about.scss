@@ -134,33 +134,18 @@ section {
 
   &#partnerships {
     .wrapper {
-      padding: 20px 0;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      overflow-x: scroll;
-      flex-wrap: nowrap;
+      padding-top: 20px;
 
-      @include breakpoint-down(small) {
-        justify-content: space-between;
-        gap: 10px;
+      .owl-three {
+        width: 90%;
+        margin: auto;
       }
-
-      &::-webkit-scrollbar {
-        display: none;
-      }
-
-      -ms-overflow-style: none;
-      scrollbar-width: none;
 
       .partner-logo {
-        flex: 1 0 calc(50% - 5px);
-        height: 100px;
+        height: 80px;
 
         @include breakpoint-up(medium) {
-          flex: 1 1 50px;
-          margin-right: 2.5rem;
-          max-width: 16%;
+          max-width: 70%;
         }
 
         img {
